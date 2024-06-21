@@ -16,7 +16,7 @@ data_store = html.Div([dcc.Store(id="original_data", data=df.to_dict()),
                        dcc.Store(id="language"),
                        ])
 
-app = Dash(__name__, title = 'App Base',
+app = Dash(__name__, title='App Base',
     external_stylesheets=[dbc.themes.BOOTSTRAP],
     suppress_callback_exceptions=True
 )
