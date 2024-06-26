@@ -73,8 +73,7 @@ page1_es = html.Div([
     State('original_data', 'data'),
     Input('page1_menu', 'value'),
     prevent_initial_call=True,
-    memoize=True
-          )
+    memoize=True)
 def filter_data(n_clicks, data, value):
 
     if n_clicks is None:
