@@ -93,7 +93,7 @@ gunicorn app:server --workers 8
 
 gunicorn cache:server --workers 8
 
-gunicorn cuatro_cache:server --workers 8
+gunicorn tres:server --workers 8
 
 ```
 
@@ -133,11 +133,8 @@ sudo service redis-server start
 - Limita el almacenamiento de datos de sesión a la cantidad esperada de usuarios concurrentes para evitar saturar la caché.
 - Genera identificadores de sesión únicos y los guarda en dcc.Store en cada carga de página. Esto asegura que cada usuario tenga datos únicos en su sesión.
 
+Hay tres cosas a tener en cuenta en este ejemplo:
 
-
-
-
-
-
-
-
+- Las marcas de tiempo del marco de datos no se actualizan cuando recuperamos los datos. Estos datos se almacenan en caché como parte de la sesión del usuario.
+- La recuperación de los datos tarda inicialmente tres segundos, pero las consultas sucesivas son instantáneas, ya que los datos se han almacenado en caché.
+- La segunda sesión muestra datos diferentes a los de la primera sesión: los datos que se comparten entre las devoluciones de llamada se aíslan de las sesiones de usuarios individuales.
