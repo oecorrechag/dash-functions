@@ -185,25 +185,22 @@ No se admiten cadenas de callback circulares que impliquen varios callback. <br>
 Se pueden utilizar callback circulares para mantener varias entradas sincronizadas entre sí.
 
 ## Synchronizing a Slider with a Text Input Example
-from dash import Dash, html, dcc, Input, Output, callb
 
+```bash
+12.sync.py
+```
 
+## Displaying Two Inputs with Different Units Example
 
+```bash
+13.sync.py
+```
 
+## Synchronizing Two Checklists
 
-
-
-
-callback
-
-
-
-
-
-
-
-
-
+```bash
+14.sync.py
+```
 
 
 
@@ -216,7 +213,7 @@ set_props                               # 11.setting.py          para modales
 # Notes inputs 
 
 Input('show-secret', 'n_clicks')        # entrada boton
-Input('num', 'value')                   # entrada dcc input texto
+Input('num', 'value')                   # entrada dcc input texto u otro
 Input("first_output_3", "children"),    # entrada un callback
 
 # Notes states
