@@ -233,3 +233,20 @@ Nuevamente, puedes expandir la sección "Contenido del almacenamiento de figuras
 Dash 2.4 y versiones posteriores admiten devoluciones de callbacks del cliente que devuelven promises.
 
 ## Fetching Data Example
+
+En este ejemplo, recuperamos datos (según el valor del menú desplegable) utilizando una función de callbacks asíncrona del lado del cliente que los envía a un componente dash_table.DataTable.
+
+```bash
+3.fetching.py
+```
+
+## Notifications Example
+
+Este ejemplo utiliza promesas y envía notificaciones de escritorio al usuario una vez que otorga permiso y selecciona el botón Notificar:
+
+```bash
+4.notification.py
+```
+
+## Callback Context
+
