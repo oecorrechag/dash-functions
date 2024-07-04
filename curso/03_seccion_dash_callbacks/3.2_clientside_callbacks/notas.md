@@ -234,7 +234,7 @@ Dash 2.4 y versiones posteriores admiten devoluciones de callbacks del cliente q
 
 ## Fetching Data Example
 
-En este ejemplo, recuperamos datos (según el valor del menú desplegable) utilizando una función de callbacks asíncrona del lado del cliente que los envía a un componente dash_table.DataTable.
+En este ejemplo, recuperamos datos (según el valor del menú desplegable) utilizando una función de callbacks asíncrona del lado del cliente que los envía a un componente **dash_table.DataTable**.
 
 ```bash
 3.fetching.py
@@ -242,7 +242,7 @@ En este ejemplo, recuperamos datos (según el valor del menú desplegable) utili
 
 ## Notifications Example
 
-Este ejemplo utiliza promesas y envía notificaciones de escritorio al usuario una vez que otorga permiso y selecciona el botón Notificar:
+Este ejemplo utiliza promises y envía notificaciones de escritorio al usuario una vez que otorga permiso y selecciona el botón Notificar:
 
 ```bash
 4.notification.py
@@ -250,3 +250,38 @@ Este ejemplo utiliza promesas y envía notificaciones de escritorio al usuario u
 
 ## Callback Context
 
+Puede usar **dash_clientside.callback_context.triggered_id** dentro de un callback del lado del cliente para acceder al ID del componente que activó el callback.
+
+En este ejemplo, mostramos el **triggered_id** en la aplicación cuando se hace clic en un botón.
+
+```bash
+5.context.py
+```
+
+## Set Props
+
+**dash_clientside.set_props** le permite actualizar una propiedad del componente Dash directamente en lugar de actualizarla al tenerla como resultado de una devolución del callback. Esto puede ser útil si tiene un componente que no es Dash (por ejemplo, un componente JavaScript personalizado) desde el cual desea actualizar una propiedad del componente Dash, o si desea implementar una funcionalidad personalizada que no está disponible directamente dentro de Dash pero que interactúa con Dash.
+
+El siguiente ejemplo agrega un detector de eventos a la página. Este detector de eventos responde al usuario que presiona **Ctrl+R** actualizando los datos de un componente dcc.Store. Otra devolución de llamada tiene la propiedad de datos del componente dcc.Store como entrada, por lo que se ejecuta cada vez que cambia y envía los datos actualizados a un componente html.Div.
+
+```bash
+6.props.py
+```
+
+Notas sobre este ejemplo:
+
+- **dash_clientside.set_props** toma dos argumentos. El primero es el ID del componente Dash a actualizar. El segundo es un objeto con el nombre de la propiedad a actualizar como clave y el valor como el nuevo valor al que actualizar esa propiedad. En este ejemplo, **dash_clientside.set_props("store-events", {data: newData})** actualiza la propiedad data del componente Dash con ID store-events, con un nuevo valor de newData, que aquí es una variable que contiene una representación de cadena. de la fecha y hora actuales.
+
+- El callback del lado del cliente devuelve **dash_clientside.no_update**, lo que significa que no actualiza ningún componente Dash especificado como Salida. La única actualización que se realiza en la página desde el callback del lado del cliente es a través de **dash_clientside.set_props**.
+
+- La entrada para el callback que agrega el detector de eventos es el ID del contenedor principal de la aplicación, html.Div. Usamos la propiedad id ya que esto no cambiará después de que se cargue nuestra aplicación, lo que significa que este callback del lado del cliente solo se ejecuta cuando se carga la aplicación.
+
+- En este ejemplo, la Salida es la misma que la Entrada, pero podría ser cualquier cosa porque no actualizamos la Salida.
+
+## Limitations
+
+Hay algunas limitaciones a tener en cuenta:
+
+- Los callbacks del lado del cliente se ejecutan en el hilo principal del navegador y bloquearán la representación y el procesamiento de eventos mientras se ejecutan.
+
+- Los callbacks del lado del cliente no son posibles si necesita hacer referencia a variables globales en el servidor o si se requiere una llamada a la base de datos.
