@@ -113,6 +113,15 @@ Algunas notas sobre este ejemplo:
 
 ## Simple Example with ALLSMALLER
 
+En el siguiente ejemplo, **ALLSMALLER** se utiliza para pasar los valores de todos los menús desplegables de la página que tienen un índice menor que el índice correspondiente al div.
+
+La interfaz de usuario en el siguiente ejemplo muestra resultados de filtro que son cada vez más específicos en cada uno a medida que aplicamos cada menú desplegable adicional.
+
+**ALLSMALLER** solo se puede usar en elementos de Input y State, y debe usarse en una clave que tenga MATCH en los elementos de Salida.
+
+**ALLSMALLER** no siempre es necesario (generalmente puedes usar **ALL** y filtrar los índices en tu devolución de llamada) pero simplificará tu lógica.
+
+
 
 
 
