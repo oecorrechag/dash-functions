@@ -121,25 +121,98 @@ La interfaz de usuario en el siguiente ejemplo muestra resultados de filtro que 
 
 **ALLSMALLER** no siempre es necesario (generalmente puedes usar **ALL** y filtrar los índices en tu devolución de llamada) pero simplificará tu lógica.
 
+```bash
+5.all_smaller.py
+```
 
+En el ejemplo anterior, intente agregar algunos filtros y luego cambie el primer menú desplegable. Observe cómo cambiar este menú desplegable actualizará el texto de cada html.Div que tenga un índice que dependa de ese menú desplegable.
 
+Es decir, cada html.Div se actualizará cada vez que cambie alguno de los menús desplegables con un índice menor que el mismo.
 
+Entonces, si se agregaron 10 filtros y el primer menú desplegable cambió, Dash activará su devolución de llamada 10 veces, una vez para actualizar cada html.Div que depende del dcc.Dropdown que cambió.
 
+Como se indicó anteriormente, también puede usar dash.callback_context para acceder a las entradas y al estado y saber qué entrada cambió. Así es como se verían esos datos al actualizar el segundo div con dos menús desplegables representados en la página después de cambiar el primer menú desplegable.
 
+dash.callback_context.triggered_prop_ids devuelve un diccionario de entradas que activaron la devolución de llamada. Cada clave es un <component_id>.<component_property> y el valor correspondiente es el <component_id>. En este ejemplo, podemos ver que el id del componente que activó la devolución de llamada fue {'index': 0, 'type': 'filter-dropdown-ex3'} y la propiedad fue value:
 
+```python
+{
+  '{"index":0,"type":"filter-dropdown-ex3"}.value': {
+      "index": 0,
+      "type": "filter-dropdown-ex3",
+  }
+}
+```
 
+dash.callback_context.triggered. Tenga en cuenta que prop_id es un diccionario encadenado sin espacios en blanco.
 
+```python
+[
+  {
+    'prop_id': '{"index":0,"type":"filter-dropdown-ex3"}.value',
+    'value': 'Canada'
+  }
+]
+```
 
-al callback
+dash.callback_context.inputs. Note that the key is a stringified dictionary with no whitespace.
 
-los callbacks
+```python
+{
+'{"index":1,"type":"filter-dropdown-ex3"}.value': 'Albania',
+'{"index":0,"type":"filter-dropdown-ex3"}.value': 'Canada'
+}
+```
 
-callback
+dash.callback_context.inputs_list. Cada elemento de la lista corresponde a una de las declaraciones de entrada. Si una de las declaraciones de entrada coincide con un patrón, contendrá una lista de valores.
 
-el callback
+```python
+[
+  {
+    'id': {
+      'index': 1,
+      'type': 'filter-dropdown-ex3'
+    },
+    'property': 'value',
+    'value': 'Albania'
+  },
+  [
+    {
+      'id': {
+        'index': 0,
+        'type': 'filter-dropdown-ex3'
+      },
+      'property': 'value',
+      'value': 'Canada'
+    }
+  ]
+]
+```
 
-del callback
+dash.callback_context.outputs_list
 
-de callback
+```python
+{
+  'id': {
+      'index': 1,
+      'type': output-ex3'
+  },
+  'property': 'children'
+}
+```
 
-de un callback
+```bash
+6.all_smaller.py
+```
+
+## Todo App
+
+Crear una aplicación Todo es un ejercicio de interfaz de usuario clásico que demuestra muchas funciones en aplicaciones comunes de "crear, leer, actualizar y eliminar" (CRUD).
+
+```bash
+7.all.py
+```
+
+```bash
+8.all.py
+```
