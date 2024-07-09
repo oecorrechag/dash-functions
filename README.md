@@ -4,45 +4,39 @@ New course in plotly 2024-2
 
 ## Table of Contents
 
-- <a href='#1'>1. 01_seccion_quickstart</a>
-    - <a href='#1.1'> 1.1_minimal-app</a>
-    - <a href='#1.2'> 1.2_tutorial</a>
+- <a href='#1'>1. 01_seccion_quickstart </a>
+    - <a href='#1.1'> 1.1_minimal-app </a>
+    - <a href='#1.2'> 1.2_tutorial </a>
 - <a href='#2'>2. 02_seccion_fundamentals</a>
-    - <a href='#2.1'> 2.1_minimal-app</a>
-    - <a href='#2.2'> 2.2_basic_callbacks</a>
-    - <a href='#2.3'> 2.3_interactive_visualizations</a>
+    - <a href='#2.1'> 2.1_dash_layout </a>
+    - <a href='#2.2'> 2.2_basic_callbacks </a>
+    - <a href='#2.3'> 2.3_interactive_visualizations </a>
+    - <a href='#2.4'> 2.4_sharing_data_between_callbacks </a>
+- <a href='#3'>3. 03_seccion_dash_callbacks </a>
+    - <a href='#3.1'> 3.1_advanced_callbacks </a>
+    - <a href='#3.2'> 3.2_clientside_callbacks </a>
+    - <a href='#3.3'> 3.3_pattern_matching_callbacks </a>
+    - <a href='#3.4'> 3.4_partial_property_updates </a>
+    - <a href='#3.5'> 3.5_background_callbacks </a>
+
 
 <hr>
 
-## <a id='1'>1. 01_seccion_quickstart </a>
+Importants 
 
-### <a id='1.2'>1.2_tutorial </a> 
-
-# Hello World
-
-# Initialize the app
-app = Dash()
-
-# App layout
-app.layout = [html.Div(children='Hello World')]
-
-The app layout represents the app components that will be displayed in the web browser and here is provided as a list, though it could also be a Dash component.
+- 2.4_sharing_data_between_callbacks
+- 3.1_advanced_callbacks
+- 3.3_pattern_matching_callbacks
+- 3.4_partial_property_updates
 
 # Run the app
+
+```bash
+python app.py
+```
+
 if __name__ == '__main__':
     app.run(debug=True)
-
-These lines are for running your app, and they are almost always the same for any Dash app you create.
-
-
-Nota: El archivo 7.mantine.py no funciona
-
-
-
-
-
-
-
 
 <hr>
 
