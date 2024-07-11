@@ -62,6 +62,13 @@ Este ejemplo se basa en el ejemplo anterior y agrega soporte para cancelar un ca
 
 ## Progress Bar
 
+Este ejemplo utiliza el argumento de progreso para el decorador @dash.callback para actualizar una barra de progreso mientras se ejecuta el callback. Establecemos el argumento de progreso en una agrupación de dependencia de Output que hace referencia a las propiedades de los componentes en el diseño de la aplicación.
+
+Cuando se asigna una agrupación de dependencia al argumento de progreso de @dash.callback, la función decorada se llama con un nuevo argumento especial como primer argumento de la función. Este argumento especial, denominado **set_progress** en el siguiente ejemplo, es un identificador de función que la función decorada llama para proporcionar actualizaciones a la aplicación sobre su progreso actual. La función **set_progress** acepta un único argumento, que corresponde a la agrupación de propiedades especificadas en la agrupación de dependencia de salida pasada al argumento de progreso de @dash.callback.
+
+```bash
+4.progress.py
+```
 
 
 
