@@ -82,9 +82,11 @@ Este ejemplo también utiliza el argumento **Progress_default** para especificar
 
 ## Using set_props Within a Callback
 
+Al usar **set_props** dentro de un callback, puede actualizar una propiedad de componente que no está incluida como resultado del callback. Las actualizaciones que utilizan **set_props** dentro de un callback en segundo plano se realizan de inmediato. En el siguiente ejemplo, actualizamos los datos de fila de Dash AG Grid usando **set_props** cada dos segundos, agregando gradualmente más datos.
 
-
-
+```bash
+6.set_props.py
+```
 
 
 
