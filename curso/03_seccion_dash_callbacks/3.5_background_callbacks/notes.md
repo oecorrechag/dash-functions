@@ -28,7 +28,7 @@ Para utilizar un callback en segundo plano, primero debe configurar un administr
 
 En los siguientes cinco ejemplos, analizaremos con más detalle cómo implementar los callbacks en segundo plano.
 
-## Simple Example
+### Simple Example
 
 A continuación se muestra un ejemplo simple de un callback en segundo plano que actualiza un elemento html.P con la cantidad de veces que se ha hecho clic en un botón. La devolución de llamada utiliza time.sleep para simular una operación de larga duración.
 
@@ -52,7 +52,15 @@ Nota: En este ejemplo, background_callback_manager se proporciona al constructor
 
 Note: Existe un problema conocido por el cual el uso de la ejecución con una aplicación de varias páginas no funciona como se esperaba cuando un usuario cambia de página mientras se ejecuta la devolución de llamada.
 
+## Cancelable Callback
 
+Este ejemplo se basa en el ejemplo anterior y agrega soporte para cancelar un callback de larga duración usando el argumento cancelar al decorador @dash.callback. Establecemos el argumento cancelar en una lista de objetos de dependencia de entrada que hacen referencia a una propiedad de un componente en el diseño de la aplicación. Cuando el valor de esta propiedad cambia mientras se ejecuta un callback, el callback se cancela. Tenga en cuenta que el valor de la propiedad no es significativo: cualquier cambio en el valor cancela el trabajo en ejecución (si corresponde).
+
+```bash
+3.cancelable.py
+```
+
+## Progress Bar
 
 
 
