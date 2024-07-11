@@ -70,6 +70,24 @@ Cuando se asigna una agrupación de dependencia al argumento de progreso de @das
 4.progress.py
 ```
 
+## Progress Bar Chart Graph
+
+El argumento de progreso del decorador @dash.callback se puede utilizar para actualizar propiedades de componentes arbitrarios. Este ejemplo crea y actualiza un gráfico de barras Plotly para mostrar el estado de cálculo actual.
+
+Este ejemplo también utiliza el argumento **Progress_default** para especificar una agrupación de valores que deben asignarse a los componentes especificados por el argumento Progress cuando el callback no está en curso. Si no se proporciona **Progress_default**, todas las propiedades de dependencia especificadas en progreso se establecen en None cuando el callback no se está ejecutando. En este caso, **Progress_default** se establece en una figura con una barra de ancho cero.
+
+```bash
+5.progress2.py
+```
+
+## Using set_props Within a Callback
+
+
+
+
+
+
+
 
 
 
