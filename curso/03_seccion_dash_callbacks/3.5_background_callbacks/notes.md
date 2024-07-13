@@ -87,17 +87,3 @@ Al usar **set_props** dentro de un callback, puede actualizar una propiedad de c
 ```bash
 6.set_props.py
 ```
-
-
-
-
-
-
-
-el callback
-
-los callbacks
-
-un callback
-
-callback
