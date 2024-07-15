@@ -53,26 +53,24 @@ triggered_prop_ids devuelve un diccionario de entradas que activaron el callback
 
 En nuestro primer ejemplo anterior, si usáramos triggered_prop_ids, cuando se haga clic en el Botón 2, devolverá:
 
+```python
+{'btn-2-ctx-example.n_clicks': 'btn-2-ctx-example'}
+```
 
+Con callbacks que coinciden con patrones
 
+Para el ejemplo anterior de 'filter-dropdown' de callback de coincidencia de patrones, triggered_prop_ids devuelve:
 
+```python
+{'{"index":0,"type":"filter-dropdown"}.value': {'index': 0, 'type': 'filter-dropdown'}}
+```
 
+Con callbacks que coinciden con patrones con múltiples activadores
 
+Si tenemos una serie de menús desplegables con diferentes índices (0-2) y todos activaron el callback, triggered_prop_ids devuelve:
 
+```python
+{'{"index":0,"type":"filter-dropdown"}.value': {'index': 0, 'type': 'filter-dropdown'}, '{"index":1,"type":"filter-dropdown"}.value': {'index': 1, 'type': 'filter-dropdown'}, '{"index":2,"type":"filter-dropdown"}.value': {'index': 2, 'type': 'filter-dropdown'}}
+```
 
-
-
-el callback
-
-los callbacks
-
-un callback
-
-callback
-
-de callback
-
-del callback
-
-
-
+En todos estos ejemplos, las claves del diccionario tienen el formato `<component_id>.<component_property>, mientras que los valores del diccionario son los identificadores de los componentes.
