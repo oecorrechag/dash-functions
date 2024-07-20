@@ -55,3 +55,15 @@ https://github.com/plotly/dash
 ```bash
 8.textarea.py
 ```
+
+## Checkboxes
+
+```bash
+9.checkboxes.py
+```
+
+```bash
+10.checkboxes.py
+```
+
+
