@@ -12,6 +12,8 @@ from dash import dcc
 
 El módulo dcc es parte de Dash y encontrará su fuente en el repositorio de Dash GitHub.
 
+https://github.com/plotly/dash
+
 ## Dropdown
 
 ```bash
@@ -20,4 +22,36 @@ El módulo dcc es parte de Dash y encontrará su fuente en el repositorio de Das
 
 ```bash
 2.dropdown.py
+```
+
+## Slider
+
+```bash
+3.slider.py
+```
+
+```bash
+4.slider.py
+```
+
+## RangeSlider
+
+```bash
+5.rangeslider.py
+```
+
+```bash
+6.rangeslider.py
+```
+
+## Input
+
+```bash
+7.input.py
+```
+
+## Textarea
+
+```bash
+8.textarea.py
 ```
