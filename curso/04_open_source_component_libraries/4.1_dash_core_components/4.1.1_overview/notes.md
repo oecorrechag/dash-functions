@@ -66,4 +66,26 @@ https://github.com/plotly/dash
 10.checkboxes.py
 ```
 
+## Radio Items
+
+```bash
+11.radio_tems.py
+```
+
+```bash
+12.radio_tems.py
+```
+
+## Button
+
+En realidad, no hay ningún componente de botón en dash_core_components. El componente regular dash_html_components.Button hace el trabajo bastante bien, pero lo hemos incluido aquí porque este es el único componente html simple que se usa comúnmente como Input de un callback:
+
+```bash
+13.button.py
+```
+
+## DatePickerSingle
+
+
+
 
