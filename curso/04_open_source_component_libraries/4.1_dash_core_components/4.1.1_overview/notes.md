@@ -128,4 +128,57 @@ Los componentes **Tabs** y **Tab** se pueden usar para crear secciones con pesta
 
 ## Graphs
 
+El componente **Graph** comparte la misma sintaxis que la biblioteca de código abierto plotly.py. 
 
+```bash
+19.graphs.py
+```
+
+## ConfirmDialogProvider
+
+El componente **dcc.ConfirmDialogProvider** envía un **dcc.ConfirmDialog** cuando un usuario hace clic en los elementos secundarios del componente. En el siguiente ejemplo, se proporciona un html.Button como elemento secundario de dcc.ConfirmDialogProvider y cuando se hace clic en el botón, se muestra el cuadro de diálogo.
+
+```bash
+20.confirm_dialog_provider.py
+```
+
+## Store
+
+El componente de la tienda se puede utilizar para conservar datos en el navegador del visitante. Los datos están dirigidos al usuario que accede a la página.
+
+Tres tipos de almacenamiento (propiedad tipo_almacenamiento):
+
+- memoria: predeterminado, conserva los datos mientras la página no se actualice.
+- local: conserva los datos hasta que se borre manualmente.
+- sesión: conserva los datos hasta que se cierre el navegador/pestaña.
+
+En este ejemplo, el callback guarda el valor del botón de opción seleccionado en un almacén de memoria. Cuando el valor en la tienda cambia, el segundo callback genera el nuevo valor y la marca de tiempo modificada en un componente html.Div.
+
+```bash
+21.store.py
+```
+
+## Loading Component
+
+El componente Cargando se puede utilizar para envolver componentes para los que desea mostrar un control giratorio, si tardan demasiado en cargarse.
+
+Para ello, comprueba si alguno de los elementos secundarios de los componentes de carga tiene un conjunto de propiedades de estado de carga donde is_loading es verdadero. Si es verdadero, mostrará uno de los controles giratorios CSS integrados.
+
+Este ejemplo muestra una rueda giratoria cada vez que un usuario selecciona un botón de opción, ya que la devolución de llamada tarda 2 segundos en actualizar el componente html.Div (id=loading-demo) dentro del componente dcc.Loading.
+
+```bash
+22.loading_component.py
+```
+
+## Location
+
+El componente de ubicación representa la barra de ubicaciones en su navegador web. A través de sus propiedades href, nombre de ruta, búsqueda y hash, puedes acceder a diferentes partes de la URL de tu aplicación. Por ejemplo, dada la URL http://127.0.0.1:8050/page-2?a=test#quiz:
+
+- href = "http://127.0.0.1:8050/page-2?a=test#quiz"
+- pathname = "/page-2"
+- search = "?a=test"
+- hash = "#quiz"
+
+```python
+dcc.Location(id="url", refresh=false)
+```
