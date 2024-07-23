@@ -86,6 +86,46 @@ En realidad, no hay ningún componente de botón en dash_core_components. El com
 
 ## DatePickerSingle
 
+```bash
+14.date_picker_single.py
+```
 
+## DatePickerRange
+
+```bash
+15.date_picker_range.py
+```
+
+## Markdown
+
+```bash
+16.markdown.py
+```
+
+## Dash and Markdown
+
+Dash admite Markdown. Markdown es una forma sencilla de escribir y formatear texto. Incluye una sintaxis para cosas como texto en negrita y cursiva, enlaces, fragmentos de código en línea, listas, citas y más.
+
+## Upload Component
+
+El componente **dcc.Upload** permite a los usuarios cargar archivos en su aplicación mediante arrastrar y soltar o el explorador de archivos nativo del sistema.
+
+## Download Component
+
+El componente **dcc.Download** permite a los usuarios descargar archivos desde su aplicación a través de su navegador.
+
+```bash
+17.component.py
+```
+
+## Tabs
+
+Los componentes **Tabs** y **Tab** se pueden usar para crear secciones con pestañas en su aplicación.
+
+```bash
+18.tabs.py
+```
+
+## Graphs
 
 
