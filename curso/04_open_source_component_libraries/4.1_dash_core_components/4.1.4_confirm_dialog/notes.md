@@ -4,3 +4,6 @@
 
 Consulte dcc.ConfirmDialogProvider para conocer una forma más sencilla de mostrar una alerta al hacer clic en un elemento.
 
+```bash
+1.confirm_dialog.py
+```
