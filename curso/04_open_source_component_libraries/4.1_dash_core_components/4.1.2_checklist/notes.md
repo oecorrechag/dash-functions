@@ -2,9 +2,7 @@
 
 **dcc.Checklist** es un componente para representar un conjunto de casillas de verificación. Consulte también RadioItems para seleccionar una sola opción a la vez o Menú desplegable para una vista más compacta.
 
-## Examples
-
-### Basic Checklist
+## Basic Checklist
 
 ```python
 from dash import dcc
@@ -15,7 +13,7 @@ dcc.Checklist(
 )
 ```
 
-### Horizontal Options
+## Horizontal Options
 
 ```python
 from dash import dcc
@@ -29,7 +27,7 @@ dcc.Checklist(
 
 **inline=True**, configuramos las opciones de la lista de verificación para que se muestren horizontalmente. Esta propiedad es una abreviatura para configurarla en la propiedad labelStyle y está disponible desde Dash 2.1. Se puede hacer lo mismo con labelStyle={'display': 'inline-block'} en versiones anteriores de Dash.
 
-### Options and Value
+## Options and Value
 
 Las opciones y las propiedades de valor son los dos primeros argumentos de **dcc.Checklist**. Hay varias formas de configurar **Opciones**. Los siguientes ejemplos definen la misma lista de verificación:
 
@@ -92,7 +90,7 @@ dcc.Checklist(
 
 Nota: Las versiones de Dash anteriores a la 2.1 solo admiten argumentos de palabras clave para opciones y valores, y también las opciones deben proporcionarse como una lista de diccionarios.
 
-### Flexible Data Types
+## Flexible Data Types
 
 Hemos visto cómo se pueden configurar las **Options** de una lista de verificación usando una lista, un diccionario o una lista de diccionarios. **Options** también acepta estructuras de datos Pandas y NumPy.
 
@@ -118,7 +116,7 @@ df = data.medals_long()
 dcc.Checklist(df.nation.unique(), df.nation.unique()[0:2])
 ```
 
-### Components as Option Labels
+## Components as Option Labels
 
 Esta función está disponible en Dash 2.5 y versiones posteriores.
 
@@ -156,7 +154,7 @@ dcc.Checklist(
 
 ```
 
-### Styling Components as Option Labels
+## Styling Components as Option Labels
 
 Esta función está disponible en Dash 2.5 y versiones posteriores.
 
