@@ -30,3 +30,8 @@ Para descargar un marco de datos como un archivo Excel con Pandas, agregue xlsxw
 
 ## Downloading Images
 
+Para descargar un archivo del disco, utilice **dcc.send_file**, teniendo cuidado de especificar la ruta del archivo.
+
+```bash
+4.downloading_images.py
+```
