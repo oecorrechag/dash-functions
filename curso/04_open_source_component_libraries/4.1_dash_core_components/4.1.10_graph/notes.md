@@ -18,10 +18,23 @@ El componente **dcc.Graph** se puede utilizar para representar cualquier visuali
 - Durante el desarrollo, puede crear figuras ejecutando aplicaciones de Dash o en otros entornos como Jupyter, su consola y más. Si está utilizando la interfaz fuera de Dash, al llamar a **fig.show()** siempre se mostrará el gráfico (ya sea en su navegador o directamente en línea en su entorno).
 - Para ver todos estos entornos de renderizado, consulte https://plotly.com/python/renderers/.
 
+## Plotly Express in Dash
 
+El objeto fig se pasa directamente a la propiedad **figure** de dcc.Graph:
 
+```python
+from dash import dcc
+import plotly.express as px
 
+df = px.data.iris()  # iris is a pandas DataFrame
+fig = px.scatter(df, x="sepal_width", y="sepal_length")
 
+dcc.Graph(figure=fig)
 
+```
 
+## Using the Low-Level Interface with go.Figure
 
+Uso de la interfaz de bajo nivel con go.Figure
+
+Lea el punto (1) anterior para obtener más información sobre la diferencia entre px y go.Figure.
