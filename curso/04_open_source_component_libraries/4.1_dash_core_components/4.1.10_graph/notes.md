@@ -49,10 +49,27 @@ dcc.Graph(figure=fig)
 
 ```
 
+## Using the Low-Level Interface with Dicts & Lists
 
+Lea (1) más arriba para obtener más información sobre la diferencia entre px, go.Figure y diccionarios y listas.
 
+```python
+from dash import dcc
 
+dcc.Graph(
+    figure={
+        'data': [
+            {'x': [1, 2, 3], 'y': [4, 1, 2], 'type': 'bar', 'name': 'SF'},
+            {'x': [1, 2, 3], 'y': [2, 4, 5], 'type': 'bar', 'name': 'Montréal'},
+        ],
+        'layout': {
+            'title': 'Dash Data Visualization'
+        }
+    }
+)
+```
 
+## Interactive Graphing with Callbacks
 
 
 
