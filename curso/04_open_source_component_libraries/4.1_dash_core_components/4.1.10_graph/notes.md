@@ -38,3 +38,27 @@ dcc.Graph(figure=fig)
 Uso de la interfaz de bajo nivel con go.Figure
 
 Lea el punto (1) anterior para obtener más información sobre la diferencia entre px y go.Figure.
+
+```python
+from dash import dcc
+import plotly.graph_objs as go
+
+fig = go.Figure(data=[go.Scatter(x=[1, 2, 3], y=[4, 1, 2])])
+
+dcc.Graph(figure=fig)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+```python
+
+```
