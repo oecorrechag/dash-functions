@@ -186,9 +186,83 @@ En los ejemplos anteriores, hemos establecido las etiquetas de opciones como cad
 5.components_as_option_labels.py
 ```
 
+## Styling Components as Option Labels
 
-
+También puedes diseñar etiquetas utilizando un componente **html.Span** para cada etiqueta y luego configurando estilos utilizando la propiedad de estilo:
 
 ```python
+from dash import dcc, html
 
+dcc.Dropdown(
+    [
+        {
+            "label": html.Span(['Montreal'], style={'color': 'Gold', 'font-size': 20}),
+            "value": "Montreal",
+        },
+        {
+            "label": html.Span(['NYC'], style={'color': 'MediumTurqoise', 'font-size': 20}),
+            "value": "NYC",
+        },
+        {
+            "label": html.Span(['London'], style={'color': 'LightGreen', 'font-size': 20}),
+            "value": "London",
+        },
+    ], value='Montreal'
+)
+```
+
+## Custom Search Values
+
+Cuando se utilizan componentes como etiquetas de opciones, la búsqueda del menú desplegable utiliza los valores de las opciones de forma predeterminada. Puede agregar una cadena adicional para la búsqueda configurando la propiedad de búsqueda de una opción. Aquí configuramos un valor de búsqueda para cada opción para que coincida con el texto de la etiqueta de esa opción.
+
+El valor proporcionado para la búsqueda se suma al valor de la opción. Por ejemplo, la opción 2 se muestra cuando un usuario busca "NYC" o "New York City".
+
+```python
+from dash import dcc, html
+
+dcc.Dropdown(
+    [
+        {
+            "label": html.Span(['Montreal'], style={'color': 'Gold', 'font-size': 20}),
+            "value": "MTL",
+            "search": "Montreal"
+        },
+        {
+            "label": html.Span(['New York City'], style={'color': 'MediumTurqoise', 'font-size': 20}),
+            "value": "NYC",
+            "search": "New York City"
+        },
+        {
+            "label": html.Span(['London'], style={'color': 'LightGreen', 'font-size': 20}),
+            "value": "LON",
+            "search": "London"
+        },
+    ], value='Montreal',
+)
+```
+
+## Dropdown Height
+
+La altura de un menú desplegable expandido es de 200 px de manera predeterminada. Las opciones que se ajustan a esta altura son visibles en la pantalla, mientras que se puede acceder a las opciones restantes mediante la barra de desplazamiento vertical del menú desplegable. Puede cambiar la altura con maxHeight si desea que se vean más o menos opciones cuando se expande el menú desplegable. En este ejemplo, la configuramos en 300 px.
+
+```python
+from dash import dcc
+
+dcc.Dropdown(
+    ['New York City', 'Montreal', 'Paris', 'London', 'Amsterdam', 'Berlin', 'Rome'],
+    'Paris', id='height-example-dropdown', maxHeight=300
+)
+```
+
+## Option Height
+
+Puedes cambiar la altura de las opciones en el menú desplegable configurando optionHeight. En este ejemplo, la configuramos en 50 px. El valor predeterminado es 35 px.
+
+```python
+from dash import dcc
+
+dcc.Dropdown(
+    ['New York City', 'Montreal', 'Paris', 'London', 'Amsterdam', 'Berlin', 'Rome'],
+    'Paris', id='option-height-example-dropdown', optionHeight=50
+)
 ```
