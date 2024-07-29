@@ -71,8 +71,14 @@ dcc.Graph(
 
 ## Interactive Graphing with Callbacks
 
+Visualizaciones interactivas en los conceptos básicos de Dash explica cómo capturar eventos de interacción del usuario con un **dcc.Graph** y cómo actualizar la propiedad de la figura en los callbacks.
 
+Algunas funciones avanzadas están documentadas en las publicaciones del foro de la comunidad:
 
+    - Cómo conservar el estado de la interfaz de usuario (nivel de zoom, etc.) de un gráfico al actualizar el gráfico en un callback https://community.plot.ly/t/preserving-ui-state-like-zoom-in-dcc-graph-with-uirevision/15793
+    - Transiciones de gráficos para transiciones suaves o animaciones en las actualizaciones de gráficos https://community.plot.ly/t/exploring-a-transitions-api-for-dcc-graph/15468
+
+## Controlling the Plotly.js Version Used by dcc.Graph
 
 
 
