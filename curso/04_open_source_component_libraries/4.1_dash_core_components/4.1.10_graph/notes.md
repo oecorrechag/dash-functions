@@ -80,6 +80,34 @@ Algunas funciones avanzadas están documentadas en las publicaciones del foro de
 
 ## Controlling the Plotly.js Version Used by dcc.Graph
 
+- El componente dcc.Graph aprovecha la biblioteca Plotly.js para generar visualizaciones.
+- En Dash 2.13 y versiones posteriores, el componente dcc.Graph utiliza la versión de la biblioteca Plotly.js en la versión de Plotly.py que haya instalado. Cada versión de Dash anterior a la 2.13 incluía su propia versión de Plotly.js.
+- Si desea utilizar una versión diferente de Plotly.js en Dash 2.13 o versiones posteriores, puede utilizar una versión diferente de Plotly.py. Consulte la página de versiones de Plotly.py para obtener más detalles sobre qué versión de Plotly.js se incluyó con cada versión.
+- En todas las versiones de Dash, también puede anular la versión de Plotly.js colocando un paquete de Plotly.js en el directorio de activos.
+- Esta técnica se puede utilizar para:
+
+
+    - Aprovecha las nuevas características de una versión de Plotly.js que sea más reciente que la que está
+    incluida en la versión instalada actualmente de Dash, Plotly.py o Dash Design Kit.
+    - Aprovecha el comportamiento más deseable de una versión de Plotly.js que sea menos reciente que la que está incluida en la versión instalada actualmente de Dash, Plotly.py o Dash Design Kit. Nos esforzamos por hacer que las versiones de Plotly.js sean completamente compatibles con versiones anteriores, por lo que no deberías tener que hacer esto muy a menudo.
+    - Utiliza un paquete parcial de Plotly.js distribuido por Plotly o un paquete de Plotly.js personalizado que solo incluya el subconjunto de características de Plotly.js que usa tu aplicación Dash. Los paquetes parciales son más pequeños que los paquetes completos de Plotly.js que vienen con el componente Graph y Plotly.py y, por lo tanto, pueden mejorar el tiempo de carga de tu aplicación.
+
+## LaTeX
+
+**dcc.Graph** admite la representación de LaTeX en títulos, etiquetas y anotaciones. Utiliza la versión 3.2 de MathJax y se puede habilitar configurando mathjax=True en el componente. Coloque el contenido que se representará con MathJax entre los delimitadores $. Si necesita un $ literal, utilice la entidad HTML &#36;. Para incluir texto dentro de los delimitadores de MathJax, utilice \text{<your_text_goes_here>}. En el siguiente ejemplo (radio solar) se incluye como texto en el eje y_título.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ```python
