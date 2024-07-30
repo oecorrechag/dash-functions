@@ -102,8 +102,30 @@ Algunas funciones avanzadas están documentadas en las publicaciones del foro de
 
 ## Graph Resizing and Responsiveness
 
+Hay varias opciones que puedes aprovechar si quieres que el tamaño de tu gráfico sea reactivo.
 
+El comportamiento predeterminado de plotly.js dicta que el gráfico debe cambiar de tamaño al cambiar el tamaño de la ventana. Sin embargo, en algunos casos, es posible que quieras cambiar el tamaño del gráfico en función del tamaño de su contenedor principal. (Puedes establecer el tamaño del contenedor principal con las propiedades style.height y style.width).
 
+La propiedad responsive del componente dcc.Graph te permite definir el comportamiento deseado. En resumen, acepta como valor True, False o 'auto':
+
+    - **True** fuerza al gráfico a responder al cambio de tamaño de la ventana y del elemento primario, independientemente de cualquier otra especificación en figure.layout o config
+    - **False** fuerza al gráfico a no responder al cambio de tamaño de la ventana y del elemento primario, independientemente de cualquier otra especificación en figure.layout o config
+    - **'auto'** conserva el comportamiento heredado (el tamaño y la capacidad de cambio de tamaño se determinan mediante los valores especificados en figure.layout y config.responsive)
+
+## How Resizing Works - Advanced
+
+Las propiedades de dcc.Graph que pueden controlar el tamaño del gráfico (además de ser responsivo) son:
+
+- figure.layout.height: establece explícitamente la altura
+- figure.layout.width: establece explícitamente el ancho
+- figure.layout.autosize: si es Verdadero, establece la altura y el ancho del gráfico al de su contenedor principal
+- config.responsive: si es Verdadero, cambia la altura y el ancho del gráfico al cambiar el tamaño de la ventana.
+
+La propiedad responsive funciona junto con las propiedades anteriores de la siguiente manera:
+
+- **True**: config.responsive y figure.layout.autosize se reemplazan con valores Verdaderos, y figure.layout.height y figure.layout.width no están configurados
+- **False**: config.responsive y figure.layout.autosize se reemplazan con valores Falso
+- **'auto'**: la redimensionabilidad del gráfico se determina de la misma manera que antes (es decir, con las cuatro propiedades anteriores)
 
 
 
