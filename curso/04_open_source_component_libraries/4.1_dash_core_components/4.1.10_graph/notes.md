@@ -96,9 +96,11 @@ Algunas funciones avanzadas están documentadas en las publicaciones del foro de
 
 **dcc.Graph** admite la representación de LaTeX en títulos, etiquetas y anotaciones. Utiliza la versión 3.2 de MathJax y se puede habilitar configurando mathjax=True en el componente. Coloque el contenido que se representará con MathJax entre los delimitadores $. Si necesita un $ literal, utilice la entidad HTML &#36;. Para incluir texto dentro de los delimitadores de MathJax, utilice \text{<your_text_goes_here>}. En el siguiente ejemplo (radio solar) se incluye como texto en el eje y_título.
 
+```bash
+1.laTeX.py
+```
 
-
-
+## Graph Resizing and Responsiveness
 
 
 
