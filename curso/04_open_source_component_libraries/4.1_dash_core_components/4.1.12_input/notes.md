@@ -10,9 +10,11 @@ El componente **dcc.Input** crea campos de entrada para texto, números, contras
 
 ## Debounce Delays the Input Processing
 
+```bash
+2.input_processing.py
+```
 
-
-
+## Number Input
 
 
 
