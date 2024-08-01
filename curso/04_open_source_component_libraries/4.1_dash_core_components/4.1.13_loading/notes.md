@@ -32,5 +32,11 @@ Pruebe lo siguiente:
 
 ## Loading Overlay Style
 
+De forma predeterminada, el indicador de giro oculta el componente envuelto durante la carga. Para que el componente envuelto sea visible y difumine el contenido, puede configurar el siguiente CSS en la propiedad overlay_style:
 
+```bash
+3.overlay_style.py
+```
+
+## Custom Spinner Component
 
