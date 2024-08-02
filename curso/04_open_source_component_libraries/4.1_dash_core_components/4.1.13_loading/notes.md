@@ -40,3 +40,13 @@ De forma predeterminada, el indicador de giro oculta el componente envuelto dura
 
 ## Custom Spinner Component
 
+En lugar de utilizar uno de los indicadores integrados, puede utilizar un componente Dash como indicador. Este ejemplo establece la propiedad custom_spinner en un componente que incluye un indicador de la biblioteca de componentes de arranque de Dash, pero puede utilizar cualquier componente para establecer la propiedad custom_spinner.
+
+Tenga en cuenta que las propiedades type, fullscreen, debug, color, style y className son específicas de los tipos de indicadores integrados y no funcionan con componentes de indicadores personalizados. 
+
+```bash
+4.spinner_component.py
+```
+
+## Target Components
+
