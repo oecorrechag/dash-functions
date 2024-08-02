@@ -86,5 +86,8 @@ En este ejemplo, el componente dcc.Loading envuelve dos salidas de callback, per
 
 ## Manually Display Loading Spinner
 
+Utilice la propiedad de visualización para mostrar u ocultar manualmente el indicador de carga. Establezca en "mostrar", "ocultar" o "automático" (valor predeterminado).
 
-
+```bash
+6.loading_spinner.py
+```
