@@ -50,3 +50,41 @@ Tenga en cuenta que las propiedades type, fullscreen, debug, color, style y clas
 
 ## Target Components
 
+Utilice la propiedad target_components para especificar qué combinaciones de id. de componente y propiedad de componente que envuelve pueden activar el indicador de carga. El componente indicador se muestra solo cuando uno de los componentes y propiedades de destino ingresa al estado de carga.
+
+target_components es un diccionario donde la clave es el id. de componente y el valor es el nombre de propiedad, o una lista de nombres de propiedad o "*"
+
+Por ejemplo, esto mostrará el indicador solo cuando se esté actualizando la propiedad rowData de AgGrid.
+
+```python
+app.layout=dcc.Loading(
+    html.Div([
+        dag.AgGrid(id="grid"),
+        html.Div(id="output-div")
+    ]),
+    target_components={"grid": "rowData" }
+)
+```
+
+Esto mostrará el control giratorio mientras se actualiza cualquiera de las propiedades de la cuadrícula:
+
+```python
+target_components ={"grid": "*"}
+```
+
+Esto mostrará el indicador cuando se estén actualizando los datos de fila o las definiciones de columna de la cuadrícula:
+
+```python
+target_components ={"grid": ["rowData", "columnDefs"]}
+```
+
+En este ejemplo, el componente dcc.Loading envuelve dos salidas de callback, pero solo una activa el spinner.
+
+```bash
+5.target_components.py
+```
+
+## Manually Display Loading Spinner
+
+
+
