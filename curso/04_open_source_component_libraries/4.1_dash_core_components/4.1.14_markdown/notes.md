@@ -10,4 +10,15 @@ dcc.Markdown es un componente para renderizar texto Markdown, lo que permite for
 
 ## Emphasis
 
+```bash
+2.emphasis.py
+```
+
+## Lists
+
+
+
+
+
+
 
