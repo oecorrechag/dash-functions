@@ -50,4 +50,8 @@ De forma predeterminada, solo se admiten determinados lenguajes en dcc.Markdown.
 
 ## LaTeX
 
+dcc.Markdown admite la representación de LaTeX. Utiliza la versión 3.2 de MathJax y se puede habilitar configurando mathjax=True en el componente. Para contenido matemático en línea, utilice delimitadores $. Para contenido matemático que desee mostrar como un bloque (normalmente contenido de varias líneas), utilice $$. Si necesita un $ literal, utilice la entidad HTML &#36;
 
+```bash
+8.laTeX.py
+```
