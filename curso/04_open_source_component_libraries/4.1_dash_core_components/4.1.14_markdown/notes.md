@@ -31,3 +31,14 @@ dcc.Markdown es un componente para renderizar texto Markdown, lo que permite for
 ```bash
 5.links.py
 ```
+
+## Link Target
+
+Con link_target puedes configurar el atributo HTML target para los enlaces en tu componente Markdown. En este ejemplo, configuramos link_target="_blank". Cuando se selecciona, el enlace de la Guía del usuario de Dash se abre en una nueva pestaña o ventana.
+
+```bash
+6.link_target.py
+```
+
+
+
