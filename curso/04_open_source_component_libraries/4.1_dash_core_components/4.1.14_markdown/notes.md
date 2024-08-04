@@ -40,5 +40,14 @@ Con link_target puedes configurar el atributo HTML target para los enlaces en tu
 6.link_target.py
 ```
 
+## Inline Code
+
+```bash
+7.inline_code.py
+```
+
+De forma predeterminada, solo se admiten determinados lenguajes en dcc.Markdown. Para obtener más detalles sobre cómo personalizar los idiomas y los esquemas de color, consulte Resaltado de sintaxis con Markdown en Cómo agregar CSS y JS y cómo anular la plantilla de carga de página.
+
+## LaTeX
 
 
