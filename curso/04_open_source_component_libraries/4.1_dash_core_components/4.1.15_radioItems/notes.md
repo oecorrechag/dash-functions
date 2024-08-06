@@ -87,6 +87,11 @@ dcc.RadioItems(
 
 ## Disable Options
 
+```bash
+3.disable_options.py
+```
+
+## Flexible Data Types
 
 
 
