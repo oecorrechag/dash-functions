@@ -93,6 +93,23 @@ dcc.RadioItems(
 
 ## Flexible Data Types
 
+Hemos visto cómo se pueden configurar las opciones mediante una lista, un diccionario o una lista de diccionarios. options también acepta estructuras de datos de Pandas y NumPy.
+
+En este ejemplo, usamos las columnas de DataFrame (df.columns) como opciones.
+
+```bash
+4.flexible_data_types.py
+```
+
+Aquí, configuramos las opciones con df.nation.unique(). Este método de Pandas devuelve valores únicos en la columna de nación. Al pasarlo a opciones, nuestro componente RadioItems muestra todos los valores únicos en esa columna.
+
+```bash
+5.flexible_data_types.py
+```
+
+## Components as Option Labels
+
+
 
 
 
