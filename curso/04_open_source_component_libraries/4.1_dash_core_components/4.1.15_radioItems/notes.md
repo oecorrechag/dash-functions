@@ -144,12 +144,28 @@ dcc.RadioItems(
 )
 ```
 
+## Styling Components as Option Labels
 
-
-
-
-
+También puedes diseñar etiquetas utilizando componentes html.Div para cada etiqueta y luego configurando estilos utilizando la propiedad de estilo:
 
 ```python
+from dash import dcc, html
+
+dcc.RadioItems(
+    [
+        {
+            "label": html.Div(['Montreal'], style={'color': 'Gold', 'font-size': 20}),
+            "value": "Montreal",
+        },
+        {
+            "label": html.Div(['NYC'], style={'color': 'MediumTurqoise', 'font-size': 20}),
+            "value": "NYC",
+        },
+        {
+            "label": html.Div(['London'], style={'color': 'LightGreen', 'font-size': 20}),
+            "value": "London",
+        },
+    ], value='Montreal'
+)
 
 ```
