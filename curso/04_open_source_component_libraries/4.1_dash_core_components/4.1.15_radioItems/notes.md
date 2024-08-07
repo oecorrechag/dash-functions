@@ -109,6 +109,43 @@ Aquí, configuramos las opciones con df.nation.unique(). Este método de Pandas 
 
 ## Components as Option Labels
 
+En los ejemplos anteriores, hemos establecido las etiquetas de opciones como cadenas. También puedes usar componentes Dash como etiquetas de opciones. En este ejemplo, cada etiqueta es una lista de componentes que contienen un html.Img y texto en un html.Span.
+
+```python
+from dash import dcc, html
+
+dcc.RadioItems(
+    [
+        {
+            "label":
+                [
+                    html.Img(src="/assets/images/language_icons/python_50px.svg", height=30),
+                    html.Span("Python", style={'font-size': 15, 'padding-left': 10}),
+                ],
+            "value": "Python",
+        },
+        {
+            "label":
+                [
+                    html.Img(src="/assets/images/language_icons/julia_50px.svg", height=30),
+                    html.Span("Julia", style={'font-size': 15, 'padding-left': 10}),
+                ], 
+            "value": "Julia",
+        },
+        {
+            "label":
+                [
+                    html.Img(src="/assets/images/language_icons/r-lang_50px.svg", height=30),
+                    html.Span("R", style={'font-size': 15, 'padding-left': 10}),
+                ],
+            "value": "R",
+        },
+    ], labelStyle={"display": "flex", "align-items": "center"},
+)
+```
+
+
+
 
 
 
