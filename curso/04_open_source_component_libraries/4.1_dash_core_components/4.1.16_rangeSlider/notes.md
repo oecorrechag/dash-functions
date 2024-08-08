@@ -106,3 +106,15 @@ dcc.RangeSlider(0, 30, value=[8, 10, 15, 17, 20], pushable=2)
 ```
 
 ## Non-Crossing Handles
+
+Para evitar que los controladores se crucen entre sí, configure allowCross=False.
+
+```python
+from dash import dcc
+
+dcc.RangeSlider(0, 30, value=[10, 15], allowCross=False)
+```
+
+## Non-Linear Slider and Updatemode
+
+
