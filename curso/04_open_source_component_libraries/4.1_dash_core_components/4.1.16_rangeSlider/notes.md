@@ -97,3 +97,12 @@ dcc.RangeSlider(0, 30, value=[1, 3, 4, 5, 12, 17])
 
 ## Pushable Handles
 
+La propiedad **pushable** es un valor booleano o numérico. El valor numérico determina la distancia mínima entre los controladores. 
+
+```python
+from dash import dcc
+
+dcc.RangeSlider(0, 30, value=[8, 10, 15, 17, 20], pushable=2)
+```
+
+## Non-Crossing Handles
