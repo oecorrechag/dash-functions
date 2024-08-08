@@ -70,5 +70,24 @@ dcc.RangeSlider(
 
 ## Included and Styling Marks
 
+De forma predeterminada, included=True, lo que significa que se resaltará el riel que se encuentra detrás del controlador. Para que el controlador actúe como un valor discreto, configure included=False. Para aplicar estilo a las marcas, incluya un atributo CSS de estilo junto con el valor clave.
+
+```python
+from dash import dcc
+
+# RangeSlider has included=True by default
+dcc.RangeSlider(0, 100, value=[10, 65], marks={
+        0: {'label': '0°C', 'style': {'color': '#77b0b1'}},
+        26: {'label': '26°C'},
+        37: {'label': '37°C'},
+        100: {'label': '100°C', 'style': {'color': '#f50'}}
+    }
+)
+```
+
+## Multiple Handles
+
+
+
 
 
