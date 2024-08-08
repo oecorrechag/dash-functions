@@ -26,7 +26,13 @@ dcc.RangeSlider(min=0, max=20, step=1, value=[5, 15], id='my-range-slider'),
 
 ## Auto Generated Marks
 
+De forma predeterminada, el componente dcc.RangeSlider agrega marcas si no se especifican, como en el ejemplo anterior. Utiliza el mínimo y el máximo y las marcas corresponden al paso si se utiliza uno.
 
+Si no se proporciona el paso, RangeSlider calcula automáticamente un paso y agrega alrededor de cinco marcas. Las etiquetas para las marcas generadas automáticamente tienen formato de unidad SI.
 
+```python
+from dash import dcc
 
+dcc.RangeSlider(0, 20, value=[5, 15])
+```
 
