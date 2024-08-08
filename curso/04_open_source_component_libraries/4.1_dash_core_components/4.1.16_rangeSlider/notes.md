@@ -87,7 +87,13 @@ dcc.RangeSlider(0, 100, value=[10, 65], marks={
 
 ## Multiple Handles
 
+Para crear varios identificadores, defina más valores para el valor.
 
+```python
+from dash import dcc
 
+dcc.RangeSlider(0, 30, value=[1, 3, 4, 5, 12, 17])
+```
 
+## Pushable Handles
 
