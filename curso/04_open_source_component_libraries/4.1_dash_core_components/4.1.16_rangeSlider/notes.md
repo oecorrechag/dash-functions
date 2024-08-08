@@ -36,3 +36,39 @@ from dash import dcc
 dcc.RangeSlider(0, 20, value=[5, 15])
 ```
 
+## Turn Off Marks
+
+Puedes desactivar las marcas configurando marks=None:
+
+```python
+from dash import dcc
+
+dcc.RangeSlider(0, 20, marks=None, value=[5, 15])
+```
+
+## Custom Marks
+
+También puede definir marcas personalizadas. Si se definen las marcas y el paso se establece en Ninguno, entonces **dcc.RangeSlider** solo podrá seleccionar valores que hayan sido predefinidos por las marcas. Tenga en cuenta que el valor predeterminado es paso=1, por lo que debe especificar explícitamente Ninguno para obtener este comportamiento. Las marcas son un diccionario donde las claves representan los valores numéricos y los valores representan sus etiquetas.
+
+```python
+from dash import dcc
+
+dcc.RangeSlider(
+    min=0,
+    max=10,
+    step=None,
+    marks={
+        0: '0°F',
+        3: '3°F',
+        5: '5°F',
+        7.65: '7.65°F',
+        10: '10°F'
+    },
+    value=[3, 7.65]
+)
+```
+
+## Included and Styling Marks
+
+
+
