@@ -136,4 +136,20 @@ dcc.RangeSlider(0, 30, value=[10, 15],
 
 ## Styling Tooltips
 
+Puede personalizar el estilo de las descripciones emergentes con el parámetro tooltip.style. Este acepta un diccionario de estilos para aplicar. En este ejemplo, configuramos el color del texto y el tamaño de la fuente.
 
+```python
+from dash import dcc
+
+dcc.RangeSlider(0, 30,
+    value=[5, 15],
+    marks=None,
+    tooltip={
+        "placement": "bottom",
+        "always_visible": True,
+        "style": {"color": "LightSteelBlue", "fontSize": "20px"},
+    },
+),
+```
+
+## Transforming Tooltip Values
