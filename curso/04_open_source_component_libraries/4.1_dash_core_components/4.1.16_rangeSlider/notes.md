@@ -124,3 +124,16 @@ Cree un control deslizante logarítmico configurando las marcas para que sean lo
 ```
 
 ## Tooltips
+
+La propiedad **tooltips** se puede utilizar para mostrar el valor actual. El parámetro **placement** controla la posición de la información sobre herramientas, es decir, 'left', 'right', 'top', 'bottom' y se utiliza always_visible=True. En ese caso, la información sobre herramientas se mostrará siempre; de ​​lo contrario, solo se mostrará cuando se pase el cursor sobre ella.
+
+```python
+from dash import dcc
+
+dcc.RangeSlider(0, 30, value=[10, 15],
+                tooltip={"placement": "bottom", "always_visible": True})
+```
+
+## Styling Tooltips
+
+
