@@ -117,4 +117,10 @@ dcc.RangeSlider(0, 30, value=[10, 15], allowCross=False)
 
 ## Non-Linear Slider and Updatemode
 
+Cree un control deslizante logarítmico configurando las marcas para que sean logarítmicas y ajustando el valor de salida del control deslizante en los callbacks. La propiedad updatemode nos permite determinar cuándo queremos que se active un callback. El siguiente ejemplo tiene updatemode='drag', lo que significa que se activa un callback cada vez que se mueve el controlador. Compare la salida del callback con el primer ejemplo de esta página para ver la diferencia.
 
+```bash
+2.slider_and_updatemode.py
+```
+
+## Tooltips
