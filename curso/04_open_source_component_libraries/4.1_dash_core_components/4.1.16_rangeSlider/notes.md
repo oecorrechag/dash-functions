@@ -181,6 +181,17 @@ dcc.RangeSlider(
 
 ## Formatting Tooltips
 
+Puede personalizar el texto que se muestra en las descripciones emergentes mediante el parámetro tooltip.template. Este acepta una cadena, que debe contener {value}. El {value} se reemplazará con la representación en cadena del valor de la descripción emergente, o con el valor devuelto por una función de transformación si se especificó una mediante tooltip.transform (consulte la sección anterior).
 
+```python
+from dash import dcc
 
-
+dcc.RangeSlider(0, 30,
+    value=[5, 15],
+    marks=None,
+    tooltip={
+        "always_visible": True,
+        "template": "$ {value}"
+    },
+),
+```
