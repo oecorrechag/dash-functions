@@ -46,6 +46,31 @@ dcc.Slider(0, 20)
 
 ## Custom Marks
 
+También puedes definir marcas. Si se definen las marcas del control deslizante y el paso se establece en Ninguno, el control deslizante solo podrá seleccionar valores que hayan sido predefinidos por las marcas. Ten en cuenta que el valor predeterminado es paso=1, por lo que debes especificar explícitamente Ninguno para obtener este comportamiento. Las marcas son un diccionario donde las claves representan los valores numéricos y los valores representan sus etiquetas.
+
+```python
+from dash import dcc
+
+dcc.Slider(0, 10,
+    step=None,
+    marks={
+        0: '0°F',
+        3: '3°F',
+        5: '5°F',
+        7.65: '7.65°F',
+        10: '10°F'
+    },
+    value=5
+)
+```
+
+## Turn Off Marks
+
+
+
+
+
+
 
 
 
