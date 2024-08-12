@@ -108,6 +108,23 @@ dcc.Slider(0, 100, value=65,
 
 ## Non-Linear Slider and Updatemode
 
+```bash
+2.slider_and_updatemode.py
+```
+
+## Slider Tooltips
+
+La propiedad tooltips se puede utilizar para mostrar el valor actual. El parámetro placement controla la posición de la información sobre herramientas, es decir, 'izquierda', 'derecha', 'arriba', 'abajo'. Si se utiliza always_visible=True, la información sobre herramientas se mostrará siempre; de ​​lo contrario, solo se mostrará cuando se pase el cursor sobre ella.
+
+```python
+from dash import dcc
+
+dcc.Slider(0, 10, 1, value=5, marks=None,
+    tooltip={"placement": "bottom", "always_visible": True})
+```
+
+## Styling Tooltips
+
 
 
 
