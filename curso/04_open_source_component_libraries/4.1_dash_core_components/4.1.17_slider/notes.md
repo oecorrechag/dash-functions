@@ -143,12 +143,35 @@ dcc.Slider(0, 10,
 
 ## Transforming Tooltip Values
 
+Puede transformar el valor que se muestra en una información sobre herramientas mediante una función de JavaScript especificando el nombre de la función con el parámetro tooltip.transform.
 
+Para que una función personalizada esté disponible en su aplicación, agréguela a un archivo en la carpeta de recursos de su aplicación. La función debe estar disponible en el espacio de nombres window.dccFunctions.
 
+En este ejemplo, tenemos una función que convierte las temperaturas en grados Fahrenheit a grados Celsius. Esta función se guarda en assets/tooltip.js:
 
+```javascript
+window.dccFunctions = window.dccFunctions || {};
+window.dccFunctions.temperatureInCelsius = function(value) {
+     return ((value - 32) * 5/9).toFixed(2);
+}
+```
 
+Luego pasamos este nombre de función al parámetro tooltip.transform:
 
+```python
+from dash import dcc
 
+dcc.Slider(
+    0,
+    10,
+    step=None,
+    marks={0: "0°F", 3: "3°F", 5: "5°F", 7.65: "7.65°F", 10: "10°F"},
+    value=5,
+    tooltip={"always_visible": True, "transform": "temperatureInCelsius"},
+)
+```
+
+## Formatting Tooltips
 
 
 
