@@ -66,10 +66,15 @@ dcc.Slider(0, 10,
 
 ## Turn Off Marks
 
+Puede desactivar las marcas del control deslizante configurando marks=None:
 
+```python
+from dash import dcc
 
+dcc.Slider(0, 20, marks=None, value=10)
+```
 
-
+## Included and Styling Marks
 
 
 
