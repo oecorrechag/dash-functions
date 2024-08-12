@@ -34,6 +34,19 @@ dcc.Slider(min=0, max=20, step=5, value=10, id='my-slider')
 
 ## Auto Generated Marks
 
+De forma predeterminada, el componente dcc.Slider agrega marcas si no se especifican, como en el ejemplo anterior. Utiliza el mínimo y el máximo y las marcas corresponden al paso si se utiliza uno.
+
+Si no se proporciona el paso, Slider calcula automáticamente un paso y agrega alrededor de cinco marcas. Las etiquetas para las marcas generadas automáticamente tienen el formato de unidad SI.
+
+```python
+from dash import dcc
+
+dcc.Slider(0, 20)
+```
+
+## Custom Marks
+
+
 
 
 
