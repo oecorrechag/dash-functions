@@ -22,4 +22,9 @@ Si utiliza la propiedad data como output, no podrá obtener los datos iniciales 
 
 ## Storage Limitations
 
-
+- El espacio de almacenamiento máximo del navegador está determinado por los siguientes factores:
+    - Móvil o portátil
+    - El navegador, en el que se implementa un algoritmo sofisticado dentro de la Gestión de cuotas
+    - Codificación de almacenamiento donde UTF-16 puede terminar ahorrando solo la mitad del tamaño de UTF-8
+    - En general, es seguro almacenar hasta 2 MB en la mayoría de los entornos y entre 5 y 10 MB en la mayoría de las aplicaciones exclusivas de escritorio.
+-   modified_timestamp es de solo lectura
