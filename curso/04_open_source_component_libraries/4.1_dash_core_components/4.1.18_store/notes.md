@@ -16,3 +16,10 @@ Para obtener más información y ejemplos, consulte la Parte 4 del tutorial de D
 2.store_clicks.py
 ```
 
+## Retrieving the Initial Store Data
+
+Si utiliza la propiedad data como output, no podrá obtener los datos iniciales al cargarla. Para contrarrestar esto, puede utilizar modified_timestamp como input y data como estado.
+
+## Storage Limitations
+
+
