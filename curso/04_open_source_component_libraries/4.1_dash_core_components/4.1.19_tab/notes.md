@@ -68,7 +68,14 @@ Observa cómo el contenedor de las pestañas también se puede diseñar suminist
 
 ## With Inline Styles
 
+Una alternativa a proporcionar clases CSS es proporcionar diccionarios de estilo directamente:
 
+```bash
+4.with_inline_styles.py
+```
 
+Por último, puedes configurar los colores de los componentes de las pestañas en la propiedad de color, especificando los colores "border", "primary" y "background" en un diccionario. ¡Asegúrate de configurarlos todos, si los estás usando!
 
-
+```bash
+5.with_inline_styles.py
+```
