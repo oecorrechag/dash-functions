@@ -18,6 +18,11 @@ https://dash.plotly.com/urls
 
 En lugar de mostrar el contenido a través de un callback, puede incrustar el contenido directamente como propiedad secundaria en el componente Pestaña:
 
+```bash
+2.content_as_tab_children.py
+```
 
+Tenga en cuenta que este método tiene una desventaja: requiere que calcule la propiedad children de cada pestaña individual por adelantado y envíe todo el contenido de la pestaña a través de la red a la vez. El método de callback le permite calcular el contenido de la pestaña sobre la marcha (es decir, cuando se hace clic en la pestaña).
 
+# Styling the Tabs Component
 
