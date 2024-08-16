@@ -26,3 +26,51 @@ Tenga en cuenta que este método tiene una desventaja: requiere que calcule la p
 
 # Styling the Tabs Component
 
+## With CSS Classes
+
+El estilo del componente Pestañas (y Tab) se puede realizar mediante clases CSS proporcionando las suyas propias a la propiedad className:
+
+```bash
+3.with_CSS_classes.py
+```
+
+Observa cómo el contenedor de las pestañas también se puede diseñar suministrando una clase a la propiedad parent_className, que usamos aquí para dibujar un borde debajo de ella, posicionando las pestañas reales (con relleno) más en el centro. También agregamos display: flex y justify-content: center a los componentes de pestaña regulares, de modo que las etiquetas con múltiples líneas no interrumpan el flujo del texto. El archivo CSS correspondiente (assets/tabs.css) se ve así. Guarda el archivo en una carpeta de activos (puede tener el nombre que quieras). Dash incluirá automáticamente este CSS cuando se cargue la aplicación. Obtén más información en Agregar CSS y JS y Anular la plantilla de carga de página.
+
+```css
+.custom-tabs-container {
+    width: 85%;
+}
+.custom-tabs {
+    border-top-left-radius: 3px;
+    background-color: #f9f9f9;
+    padding: 0px 24px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.custom-tab {
+    color:#586069;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 3px solid transparent !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    background-color: #fafbfc;
+    padding: 12px !important;
+    font-family: "system-ui";
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.custom-tab--selected {
+    color: black;
+    box-shadow: 1px 1px 0px white;
+    border-left: 1px solid lightgrey !important;
+    border-right: 1px solid lightgrey !important;
+    border-top: 3px solid #e36209 !important;
+}
+```
+
+## With Inline Styles
+
+
