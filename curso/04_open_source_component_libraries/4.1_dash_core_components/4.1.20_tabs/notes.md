@@ -10,6 +10,13 @@ Adjunte un callback a la propiedad de valor Tabs y actualice la propiedad childr
 1.content_as_callback.py
 ```
 
+En el ejemplo anterior, nuestro callback contiene todo el contenido. En la práctica, mantendremos el contenido de la pestaña en archivos separados e importaremos los datos. Para ver un ejemplo, consulte el Tutorial de URL y aplicaciones de varias páginas.
+
+https://dash.plotly.com/urls
+
+## Method 2. Content as Tab Children
+
+En lugar de mostrar el contenido a través de un callback, puede incrustar el contenido directamente como propiedad secundaria en el componente Pestaña:
 
 
 
