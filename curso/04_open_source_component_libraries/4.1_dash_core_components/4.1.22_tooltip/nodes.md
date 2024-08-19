@@ -20,5 +20,17 @@ El siguiente ejemplo visualiza los resultados de t-SNE de imágenes de dígitos 
 
 ## Using base64 Encoded Images
 
+Este ejemplo utiliza la biblioteca **PIL** de Python para codificar una imagen en formato base64 y luego la devuelve desde un callback:
+
+```bash
+3.base64_encoded_images.py
+```
+
+## Loading Text
+
+
+
+
+
 
 
