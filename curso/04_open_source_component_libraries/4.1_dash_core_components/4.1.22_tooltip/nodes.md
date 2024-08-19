@@ -12,8 +12,13 @@ A continuación se muestra un ejemplo de creación de una información sobre her
 
 ## Visualizing t-SNE Plot of MNIST Images
 
+El siguiente ejemplo visualiza los resultados de t-SNE de imágenes de dígitos escritos a mano del conjunto de datos MNIST, con las imágenes mostradas en la información sobre herramientas cuando se pasa el mouse sobre ellas:
 
+```bash
+2.plot_of_MNIST_images.py
+```
 
+## Using base64 Encoded Images
 
 
 
