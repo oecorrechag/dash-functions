@@ -28,9 +28,13 @@ Este ejemplo utiliza la biblioteca **PIL** de Python para codificar una imagen e
 
 ## Loading Text
 
+El texto de carga de la información sobre herramientas se puede configurar mediante **loading_text**, que está configurado como "Cargando..." de manera predeterminada. Aquí se muestra un ejemplo que utiliza el parámetro **loading_text** junto con un callback de interfaz.
 
+```bash
+4.loading_text.py
+```
 
-
+## Styling Tooltip with Background and Border Color
 
 
 
