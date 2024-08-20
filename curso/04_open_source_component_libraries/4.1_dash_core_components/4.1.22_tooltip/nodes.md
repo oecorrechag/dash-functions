@@ -36,5 +36,8 @@ El texto de carga de la información sobre herramientas se puede configurar medi
 
 ## Styling Tooltip with Background and Border Color
 
+Las descripciones emergentes se pueden diseñar utilizando los parámetros **background_color** y **border_color**:
 
-
+```bash
+5.background_and_border_color.py
+```
