@@ -21,3 +21,9 @@ El siguiente ejemplo responde a las cargas de imágenes mostrándolas en la apli
 ```
 
 ## Styling the Upload Component
+
+El atributo children del componente Upload acepta cualquier componente Dash. Al seleccionar el elemento child se activa la acción de carga, al igual que al arrastrar y soltar archivos. Aquí hay tres formas diferentes de darle estilo al componente Upload usando componentes Dash estándar.
+
+```bash
+3.styling_the_upload_component.py
+```
