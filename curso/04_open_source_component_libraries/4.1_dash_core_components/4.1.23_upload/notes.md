@@ -13,3 +13,11 @@ A continuación se muestra un ejemplo que analiza archivos CSV o Excel y muestra
 ```
 
 ## Displaying Uploaded Images
+
+El siguiente ejemplo responde a las cargas de imágenes mostrándolas en la aplicación con el componente html.Img.
+
+```bash
+2.displaying_uploaded_images.py
+```
+
+## Styling the Upload Component
