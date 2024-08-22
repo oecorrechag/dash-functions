@@ -97,7 +97,28 @@ Ese código Dash representará este marcado HTML:
 
 ## n_clicks and disable_n_clicks
 
+Todos los componentes HTML de Dash tienen una propiedad n_clicks, que es un número entero que representa la cantidad de veces que se hizo clic en el elemento. Puede usar n_clicks para activar una devolución de llamada y usar el valor de n_clicks en su lógica de devolución de llamada.
 
+En este ejemplo, capturamos el valor n_clicks de html.Div con ID click-div y lo enviamos a html.P con ID click-output. n_clicks usa un detector de eventos para capturar eventos de clic del usuario en el elemento e incrementar el valor n_clicks.
+
+```bash
+1.n_clicks_and_disable_n_clicks.py
+```
+
+Muchos componentes HTML de Dash rara vez están pensados ​​para que se pueda hacer clic en ellos (en el ejemplo anterior, es inusual que se pueda hacer clic en html.Div; una mejor opción de diseño sería utilizar un botón). Incluso cuando se utilizan elementos como html.Div en los que no se pretende que el usuario haga clic, el detector de eventos n_clicks hace que el software de lectura de pantalla interprete los elementos como elementos en los que se puede hacer clic, lo que puede resultar confuso.
+
+En Dash 2.8 y versiones posteriores, los componentes HTML de Dash se mejoraron para un mejor control sobre el detector de eventos n_clicks:
+
+- Si no le asigna un ID a su componente HTML, no se agregará el detector de eventos n_clicks.
+- Si su componente HTML tiene un ID pero no necesita capturar clics, puede deshabilitar el detector de eventos n_clicks configurando la opción deshabilitar_n_clicks=True.
+
+Aquí tenemos el mismo ejemplo que el anterior, pero hemos decidido que no necesitamos capturar clics, por lo que hemos deshabilitado n_clicks en html.Div (el callback es para fines ilustrativos):
+
+```bash
+2.n_clicks_and_disable_n_clicks.py
+```
+
+Con disable_n_clicks=True, comunicamos a los usuarios con lector de pantalla que no se puede hacer clic en el html.Div.
 
 
 
