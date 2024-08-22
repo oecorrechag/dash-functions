@@ -61,6 +61,42 @@ quotes, and more.
 
 ## HTML Component Properties
 
+Si utiliza componentes HTML, también tendrá acceso a propiedades como estilo, clase e id. Todos estos atributos están disponibles en las clases de Python.
+
+Los elementos HTML y las clases Dash son prácticamente iguales, pero existen algunas diferencias clave:
+
+- La propiedad de estilo es un diccionario
+- Las propiedades del diccionario de estilo están en mayúsculas y minúsculas
+- La clave de clase se renombra como className
+- Las propiedades de estilo en unidades de píxeles se pueden proporcionar simplemente como números sin la unidad px
+
+```python
+from dash import html
+
+html.Div([
+    html.Div('Example Div', style={'color': 'blue', 'fontSize': 14}),
+    html.P('Example P', className='my-class', id='my-p-element')
+], style={'marginBottom': 50, 'marginTop': 25})
+```
+
+Ese código Dash representará este marcado HTML:
+
+```html
+<div style="margin-bottom: 50px; margin-top: 25px;">
+
+    <div style="color: blue; font-size: 14px">
+        Example Div
+    </div>
+
+    <p class="my-class", id="my-p-element">
+        Example P
+    </p>
+
+</div>
+```
+
+## n_clicks and disable_n_clicks
+
 
 
 
