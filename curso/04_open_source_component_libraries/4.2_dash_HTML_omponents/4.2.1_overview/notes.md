@@ -119,6 +119,3 @@ Aquí tenemos el mismo ejemplo que el anterior, pero hemos decidido que no neces
 ```
 
 Con disable_n_clicks=True, comunicamos a los usuarios con lector de pantalla que no se puede hacer clic en el html.Div.
-
-
-
