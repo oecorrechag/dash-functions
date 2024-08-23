@@ -9,3 +9,15 @@ Un ejemplo de un botón predeterminado sin propiedades adicionales y n_clicks en
 ```
 
 ## Determining which Button Changed with dash.ctx
+
+Este ejemplo utiliza la propiedad dash.ctx para determinar qué entrada cambió.
+
+Nota: dash.ctx está disponible en Dash 2.4 y versiones posteriores. dash.callback_context ofrece una funcionalidad similar en versiones anteriores de Dash.
+
+```bash
+2.determining_which_button_changed_with_dash.ctx.py
+```
+
+
+
+
