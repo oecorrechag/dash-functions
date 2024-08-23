@@ -17,7 +17,3 @@ Nota: dash.ctx está disponible en Dash 2.4 y versiones posteriores. dash.callba
 ```bash
 2.determining_which_button_changed_with_dash.ctx.py
 ```
-
-
-
-
