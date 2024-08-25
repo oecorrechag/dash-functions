@@ -41,5 +41,3 @@ dash_table.DataTable(df.to_dict('records'))
 ```bash
 2.table_with_click_callback.py
 ```
-
-
