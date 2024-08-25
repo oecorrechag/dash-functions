@@ -37,3 +37,9 @@ dash_table.DataTable(df.to_dict('records'))
 ```
 
 ## Table with Click Callback
+
+```bash
+2.table_with_click_callback.py
+```
+
+
