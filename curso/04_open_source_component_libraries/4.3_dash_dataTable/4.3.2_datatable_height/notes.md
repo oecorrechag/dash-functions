@@ -22,3 +22,12 @@ Si tiene más de 1000 filas, el navegador se ralentizará al intentar representa
 
 ## Vertical Scroll With Pagination
 
+Si tiene más de ~1000 filas, puede mantener la paginación en la parte inferior de la tabla, restringir la altura y mostrar una barra de desplazamiento vertical.
+
+```bash
+3.vertical_scroll_with_pagination.py
+```
+
+## Vertical Scroll With Fixed Headers
+
+
