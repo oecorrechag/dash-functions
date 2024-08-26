@@ -12,3 +12,13 @@ Si utiliza paginación, puede controlar la altura mostrando menos filas a la vez
 
 ## Setting Table Height with Vertical Scroll
 
+Si la tabla contiene menos de aproximadamente 1000 filas, una opción es eliminar la paginación, restringir la altura y mostrar una barra de desplazamiento vertical.
+
+```bash
+2.setting_table_height_with_vertical_scroll.py
+```
+
+Si tiene más de 1000 filas, el navegador se ralentizará al intentar representar la tabla. Con más de 1000 filas, recomendamos cambiar a paginación de navegador o servidor (como se indica más arriba) o virtualización (como se indica más abajo).
+
+## Vertical Scroll With Pagination
+
