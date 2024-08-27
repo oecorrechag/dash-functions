@@ -46,11 +46,11 @@ También puedes fijar los encabezados para que el contenido de la tabla se despl
 
 4. Si el encabezado de una columna es más ancho que los datos dentro de esa columna y el contenedor de la tabla no es lo suficientemente ancho para mostrar los encabezados, entonces la columna será tan ancha como los datos y el texto del encabezado se truncará (la mayoría de los navegadores) o se desbordará hacia la siguiente columna (Firefox). Esto es un error ([plotly/dash-table#432](https://github.com/plotly/dash-table/issues/432)). La solución actual es ocultar el desbordamiento o fijar el ancho de las columnas en píxeles. Al usar esta solución alternativa, puede encontrarse con algunos de estos problemas:
 
-    4.1 En aquellos casos en los que el encabezado está cortado, no es posible colocar puntos suspensivos dentro del encabezado. Para obtener actualizaciones, consulte https://github.com/plotly/dash-table/issues/735
+    4.1. En aquellos casos en los que el encabezado está cortado, no es posible colocar puntos suspensivos dentro del encabezado. Para obtener actualizaciones, consulte https://github.com/plotly/dash-table/issues/735
 
-    4.2 Cuando el texto se trunca, resulta útil mostrar información sobre herramientas que muestre el texto completo. Aún no es posible agregar información sobre herramientas a los encabezados. Para obtener actualizaciones, consulte https://github.com/plotly/dash-table/issues/295
+    4.2. Cuando el texto se trunca, resulta útil mostrar información sobre herramientas que muestre el texto completo. Aún no es posible agregar información sobre herramientas a los encabezados. Para obtener actualizaciones, consulte https://github.com/plotly/dash-table/issues/295
 
-    4.3 Si el texto del encabezado se trunca, el desbordamiento del encabezado es visible. La solución actual consiste en ocultar el desbordamiento con overflow: 'hidden'.
+    4.3. Si el texto del encabezado se trunca, el desbordamiento del encabezado es visible. La solución actual consiste en ocultar el desbordamiento con overflow: 'hidden'.
 
 ## Vertical Scroll with Virtualization
 
@@ -63,3 +63,9 @@ Todos los datos de su tabla se seguirán enviando a través de la red al navegad
 ```
 
 ## Limitations
+
+1. Con la virtualización, el navegador no conoce el ancho de las columnas de antemano; solo puede determinar el ancho de las columnas cuando se renderizan. Por lo tanto, las columnas pueden cambiar de tamaño a medida que se desplaza, a menos que fije el ancho de las columnas.
+
+2. Dado que, con la virtualización, estamos renderizando filas sobre la marcha mientras nos desplazamos, el rendimiento de renderización será más lento que el desplazamiento vertical nativo optimizado para el navegador. Si se desplaza rápidamente, puede notar que la tabla aparece momentáneamente en blanco hasta que se completa la renderización.
+
+3. Existen las mismas limitaciones de fixed_rows que se mencionaron anteriormente.
