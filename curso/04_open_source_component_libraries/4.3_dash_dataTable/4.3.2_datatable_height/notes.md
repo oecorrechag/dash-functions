@@ -30,4 +30,12 @@ Si tiene más de ~1000 filas, puede mantener la paginación en la parte inferior
 
 ## Vertical Scroll With Fixed Headers
 
+También puedes fijar los encabezados para que el contenido de la tabla se desplace pero los encabezados permanezcan visibles.
+
+```bash
+4.vertical_scroll_with_fixed_headers.py
+```
+
+## Limitations
+
 
