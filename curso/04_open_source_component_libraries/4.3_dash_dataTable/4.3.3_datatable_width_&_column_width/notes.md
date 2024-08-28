@@ -12,5 +12,12 @@ Los estilos predeterminados funcionan bien para una pequeña cantidad de columna
 
 ## Wrapping onto Multiple Lines
 
+Si sus celdas contienen texto con espacios, puede desbordar su contenido en varias líneas. <br>
+**style_cell** actualiza el estilo de las celdas de datos y de encabezado. Para especificar estilos de encabezado, utilice **style_header**. Para especificar estilos de celdas de datos, utilice **style_data**. <br>
+Este ejemplo mantiene el encabezado en una sola línea mientras envuelve las celdas de datos.
 
+```bash
+2.wrapping_onto_multiple_lines.py
+```
 
+## Denser Multi-Line Cells with Line-Height
