@@ -21,3 +21,15 @@ Este ejemplo mantiene el encabezado en una sola línea mientras envuelve las cel
 ```
 
 ## Denser Multi-Line Cells with Line-Height
+
+Si muestra mucho texto en las celdas, puede que desee hacer que el texto parezca un poco más denso acortando la altura de línea. De manera predeterminada (como se muestra arriba), es de alrededor de 22 px. Aquí, es de 15 px.
+
+```bash
+3.denser_multi-line_cells_with_line-height.py
+```
+
+## Wrapping onto Multiple Lines while Constraining the Height of Cells
+
+
+
+
