@@ -30,6 +30,36 @@ Si muestra mucho texto en las celdas, puede que desee hacer que el texto parezca
 
 ## Wrapping onto Multiple Lines while Constraining the Height of Cells
 
+Si su texto es muy largo, puede restringir la altura de las celdas y mostrar una información sobre herramientas al pasar el cursor sobre la celda.
 
+```bash
+4.wrapping_onto_multiple_lines_while_constraining_the_height_of_cells.py
+```
 
+Pase el cursor sobre las celdas para ver la información sobre herramientas.
+
+¿Por qué el CSS? Las celdas de altura fija son complicadas porque, según las reglas CSS 2.1, la altura de una celda de tabla es "la altura mínima requerida por el contenido". Por lo tanto, aquí estamos configurando la altura de la celda indirectamente al configurar el div dentro de la celda.
+
+En este ejemplo, mostramos dos líneas de datos configurando la altura de línea en 15 px y la altura de cada celda en 30 px. La segunda oración está cortada.
+
+Este método tiene algunas limitaciones:
+
+1. No es posible mostrar elipses con este método.
+2. No es posible configurar una altura máxima. Todas las celdas deben tener la misma altura.
+
+Suscríbete a plotly/dash-table#737 para recibir actualizaciones u otras soluciones alternativas a este problema.
+
+## Overflowing Into Ellipses
+
+Como alternativa, puede mantener el contenido en una sola línea pero mostrar un conjunto de puntos suspensivos si el contenido es demasiado largo para caber en la celda.
+
+Aquí, max-width se establece en 0. Puede ser cualquier número, lo único importante es que se proporcione. El comportamiento será el mismo ya sea 0 o 50.
+
+Si solo desea ocultar el contenido en lugar de mostrar puntos suspensivos, configure textOverflow en 'clip' en lugar de 'ellipsis'.
+
+```bash
+5.overflowing_into_ellipses.py
+```
+
+## Ellipses & Tooltips
 
