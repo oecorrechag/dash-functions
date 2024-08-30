@@ -63,3 +63,27 @@ Si solo desea ocultar el contenido en lugar de mostrar puntos suspensivos, confi
 
 ## Ellipses & Tooltips
 
+Si muestra datos de texto cortados por puntos suspensivos, puede incluir información sobre herramientas para que el texto completo aparezca al pasar el mouse sobre la celda.
+
+Al configurar **tooltip_duration** en **None**, la información sobre herramientas persistirá mientras el puntero del mouse se encuentre sobre la celda y desaparecerá cuando el puntero se aleje. Puede anular esto al pasar un número en milisegundos (por ejemplo, 2000 si desea que desaparezca después de dos segundos).
+
+```bash
+6.ellipses_&_tooltips.py
+```
+
+## Horizontal Scroll
+
+En lugar de intentar que todo el contenido entre en el contenedor, puedes convertirlo en un contenedor desplazable.
+
+```bash
+7.horizontal_scroll.py
+```
+
+Observe que aún no hemos establecido explícitamente el ancho de las columnas individuales. El ancho de las columnas se ha calculado de forma dinámica en función del ancho de la tabla y del ancho del contenido de la celda. En el ejemplo anterior, al proporcionar una barra de desplazamiento, estamos otorgando a la tabla el ancho que necesita para que quepa todo el ancho del contenido de la celda en una sola línea.
+
+## Horizontal Scroll with Fixed-Width Columns & Cell Wrapping
+
+
+
+
+
