@@ -90,3 +90,9 @@ Como alternativa, puede fijar el ancho de cada columna agregando width. En este 
 ```
 
 ## Horizontal Scroll with Fixed-Width & Ellipses
+
+```bash
+9.scroll_with_fixed-width_&_ellipses.py
+```
+
+## Horizontal Scrolling via Fixed Columns
