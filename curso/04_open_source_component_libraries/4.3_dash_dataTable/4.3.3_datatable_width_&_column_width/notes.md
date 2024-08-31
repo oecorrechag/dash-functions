@@ -83,7 +83,10 @@ Observe que aún no hemos establecido explícitamente el ancho de las columnas i
 
 ## Horizontal Scroll with Fixed-Width Columns & Cell Wrapping
 
+Como alternativa, puede fijar el ancho de cada columna agregando width. En este caso, el ancho de la columna será constante, incluso si su contenido es más corto o más ancho.
 
+```bash
+8.fixed-width_columns_&_cell_wrapping.py
+```
 
-
-
+## Horizontal Scroll with Fixed-Width & Ellipses
