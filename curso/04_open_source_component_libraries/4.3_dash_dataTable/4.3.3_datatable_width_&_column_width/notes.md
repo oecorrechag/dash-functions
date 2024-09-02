@@ -96,3 +96,17 @@ Como alternativa, puede fijar el ancho de cada columna agregando width. En este 
 ```
 
 ## Horizontal Scrolling via Fixed Columns
+
+También puede agregar una barra de desplazamiento horizontal a su tabla fijando las columnas más a la izquierda con **fixed_columns**.
+
+```bash
+10.horizontal_scrolling_via_fixed_columns.py
+```
+
+Aquí está el mismo ejemplo pero con celdas y elipses de ancho fijo.
+
+```bash
+11.horizontal_scrolling_via_fixed_columns.py
+```
+
+## Setting Column Widths
