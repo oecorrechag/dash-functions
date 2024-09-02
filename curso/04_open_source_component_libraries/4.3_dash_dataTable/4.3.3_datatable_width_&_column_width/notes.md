@@ -110,3 +110,26 @@ Aquí está el mismo ejemplo pero con celdas y elipses de ancho fijo.
 ```
 
 ## Setting Column Widths
+
+### Percentage Based Widths
+
+Los anchos de las columnas individuales se pueden proporcionar mediante la propiedad **style_cell_conditional**. Estos anchos se pueden especificar como porcentajes o píxeles fijos.
+
+```bash
+12.percentage_based_widths.py
+```
+```bash
+13.percentage_based_widths.py
+```
+
+De forma predeterminada, el ancho de la columna es el máximo entre el porcentaje indicado y el ancho del contenido. Por lo tanto, si el contenido de la columna es ancho, la columna puede ser más ancha que el porcentaje indicado. Esto evita el desbordamiento.
+
+En el ejemplo siguiente, observe que la primera columna es en realidad más ancha que el 10 %; si fuera más corta, el texto "New York City" se desbordaría.
+
+```bash
+14.percentage_based_widths.py
+```
+
+Para forzar que las columnas tengan un ancho determinado (incluso si eso provoca desbordamiento), use **table-layout**: **fixed**.
+
+### Percentage Based Widths and table-layout: fixed
