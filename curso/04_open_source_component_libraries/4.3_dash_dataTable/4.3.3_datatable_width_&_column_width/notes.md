@@ -133,3 +133,24 @@ En el ejemplo siguiente, observe que la primera columna es en realidad más anch
 Para forzar que las columnas tengan un ancho determinado (incluso si eso provoca desbordamiento), use **table-layout**: **fixed**.
 
 ### Percentage Based Widths and table-layout: fixed
+
+Si desea que todas las columnas tengan el mismo ancho basado en porcentaje, use **style_data** y **table-layout**: **fixed**
+
+```bash
+15.percentage_based_widths_and_table-layout.py
+```
+
+Establecer anchos consistentes basados ​​en porcentajes es una buena opción si utiliza virtualización, ordenación (sort_action) o filtrado (filter_action). Sin anchos de columna fijos, la tabla cambiará de tamaño dinámicamente las columnas según el ancho de los datos que se muestran.
+
+**Limitations**
+
+- Los anchos basados ​​en porcentajes no están disponibles con fixed_rows y table-layout: fixed. Consulte plotly/dash-table#745 https://github.com/plotly/dash-table/issues/748
+
+- Los anchos basados ​​en porcentajes con fixed_rows y sin table-layout: fixed tienen algunos problemas al cambiar el tamaño de la ventana. Consulte plotly/dash-table#747 https://github.com/plotly/dash-table/issues/747
+
+
+### Individual Column Widths with Pixels
+
+
+
+
