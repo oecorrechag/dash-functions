@@ -151,6 +151,10 @@ Establecer anchos consistentes basados ​​en porcentajes es una buena opción
 
 ### Individual Column Widths with Pixels
 
+En este ejemplo, configuramos tres columnas con anchos fijos. Las dos columnas restantes ocuparán el espacio restante.
 
+```bash
+16.individual_column_widths_with_pixels.py
+```
 
-
+### Overriding a Single Column's Width
