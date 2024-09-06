@@ -158,3 +158,9 @@ En este ejemplo, configuramos tres columnas con anchos fijos. Las dos columnas r
 ```
 
 ### Overriding a Single Column's Width
+
+Puede establecer el ancho de todas las columnas con style_data y anular una sola columna con **style_cell_conditional**.
+
+```bash
+17.overriding_a_single_columns_width.py
+```
