@@ -21,3 +21,12 @@ En ambos casos, los encabezados de las columnas deben tener la misma alineación
 ```
 
 ## Styling the Table as a List
+
+La vista en cuadrícula es una buena vista predeterminada para una tabla editable, ya que se ve y se siente como una hoja de cálculo. Si su tabla no es editable, en muchos casos puede verse más ordenada sin las líneas de cuadrícula verticales.
+
+```bash
+3.styling_the_table_as_a_list.py
+```
+
+## List Style with Minimal Headers
+
