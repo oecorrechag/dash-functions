@@ -37,3 +37,13 @@ En algunos contextos, el fondo gris puede resultar un poco pesado. Puedes aliger
 ```
 
 ## Striped Rows
+
+Cuando visualiza conjuntos de datos en los que necesita comparar valores dentro de filas individuales, a veces puede resultar útil asignarles a las filas colores de fondo alternos. Recomendamos utilizar colores descoloridos para no atraer demasiado la atención a las rayas.
+
+Tenga en cuenta los tres grupos diferentes a los que puede aplicar estilos: "celda" es toda la tabla, "encabezado" son solo las filas de encabezado y "datos" son solo las filas de datos. Para usar estilos pares/impares u otros basados ​​en row_index, debe usar **style_data_conditional**.
+
+```bash
+5.striped_rows.py
+```
+
+## Multi-Headers
