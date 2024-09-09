@@ -30,3 +30,10 @@ La vista en cuadrícula es una buena vista predeterminada para una tabla editabl
 
 ## List Style with Minimal Headers
 
+En algunos contextos, el fondo gris puede resultar un poco pesado. Puedes aligerarlo con un fondo blanco y un texto en negrita.
+
+```bash
+4.list_style_with_minimal_headers.py
+```
+
+## Striped Rows
