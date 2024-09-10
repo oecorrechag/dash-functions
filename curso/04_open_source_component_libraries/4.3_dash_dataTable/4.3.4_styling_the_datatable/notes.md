@@ -55,3 +55,11 @@ Los encabezados múltiples son compatibles de forma nativa en DataTable. Solo ti
 ```
 
 ## Dark Theme with Cells
+
+Tienes control total sobre todos los elementos de la tabla. Si estás viendo tu tabla en una aplicación con un fondo oscuro, puedes proporcionar colores de fuente y fondo invertidos.
+
+```bash
+7.dark_theme_with_cells.py
+```
+
+## Styles Priority
