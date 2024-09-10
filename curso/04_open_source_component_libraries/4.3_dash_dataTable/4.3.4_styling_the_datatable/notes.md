@@ -47,3 +47,11 @@ Tenga en cuenta los tres grupos diferentes a los que puede aplicar estilos: "cel
 ```
 
 ## Multi-Headers
+
+Los encabezados múltiples son compatibles de forma nativa en DataTable. Solo tienes que configurar el nombre dentro de las columnas como una lista de cadenas en lugar de una sola cadena y activar **merge_duplicate_headers**=**True**. DataTable comprobará los vecinos de cada fila de encabezado y, si coinciden, los fusionará en una sola celda automáticamente.
+
+```bash
+6.multi-headers.py
+```
+
+## Dark Theme with Cells
