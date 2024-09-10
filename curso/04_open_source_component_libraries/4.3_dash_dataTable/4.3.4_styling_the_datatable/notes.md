@@ -63,3 +63,20 @@ Tienes control total sobre todos los elementos de la tabla. Si estás viendo tu 
 ```
 
 ## Styles Priority
+
+Existe un orden específico de prioridad para las propiedades style_*. Si hay varias propiedades style_*, la que tenga mayor prioridad tendrá precedencia. Dentro de cada propiedad, las reglas para índices más altos tendrán prioridad sobre las de índices más bajos. Los estilos aplicados previamente con la misma prioridad prevalecen sobre los posteriores (aplicados de arriba hacia abajo, de izquierda a derecha).
+
+Estas son las prioridades de las propiedades style_*, en orden decreciente:
+
+1. style_data_conditional
+2. style_data
+3. style_filter_conditional
+4. style_filter
+5. style_header_conditional
+6. style_header
+7. style_cell_conditional
+8. style_cell
+
+```bash
+8.dark_theme_with_cells.py
+```
