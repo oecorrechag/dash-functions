@@ -80,3 +80,13 @@ Estas son las prioridades de las propiedades style_*, en orden decreciente:
 ```bash
 8.dark_theme_with_cells.py
 ```
+
+## Adding Borders
+
+Personaliza los bordes de la tabla agregando borde a los accesorios de **style***.
+
+```bash
+9.adding_borders.py
+```
+
+
