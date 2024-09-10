@@ -89,4 +89,10 @@ Personaliza los bordes de la tabla agregando borde a los accesorios de **style**
 9.adding_borders.py
 ```
 
+## Styling Editable Columns
 
+Las columnas editables se pueden diseñar utilizando column_editable en las propiedades **style_header_conditional**, **style_filter_conditional** y **style_data_conditional**.
+
+```bash
+10.styling_editable_columns.py
+```
