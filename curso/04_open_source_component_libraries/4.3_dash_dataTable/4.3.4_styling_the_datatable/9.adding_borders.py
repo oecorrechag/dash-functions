@@ -8,7 +8,7 @@ data = OrderedDict(
         ("Region", ["Montreal", "Toronto", "New York City", "Miami", "San Francisco", "London"]),
         ("Temperature", [1, -20, 3.512, 4, 10423, -441.2]),
         ("Humidity", [10, 20, 30, 40, 50, 60]),
-        ("Pressure", [2, 10924, 3912, -10, 3591.2, 15]),
+        ("Pressure", [20, 10924, 3912, -10, 3591.2, 15]),
     ]
 )
 
