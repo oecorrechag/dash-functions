@@ -1,0 +1,35 @@
+# Conditional Formatting
+
+El formato condicional se proporciona a través de la propiedad **style_data_conditional**. La palabra clave **if** proporciona un conjunto de instrucciones de formato condicional y el resto de las palabras clave son propiedades CSS con formato **camelCased**.
+
+La sintaxis if admite varios operadores: row_index, column_id, filter_query, column_type, column_editable y state.
+
+**filter_query** es la opción más flexible cuando se trabaja con datos.
+
+A continuación, se incluye un ejemplo de todos los operadores:
+
+```bash
+1.conditional_formatting.py
+```
+Notas:
+
+- **filter_query** admite distintos operadores según el tipo de datos de la columna:
+    - =, >, >=, <, <= y contains son compatibles con todos los tipos de datos (numéricos, de texto, de fecha y hora y cualquier otro).
+    - Con contains, el lado derecho debe ser una cadena, por lo que {Date} contains "01" funcionará, pero {Date} contains 1 no.
+    - datestartswith es compatible con datetime
+    - is nil es compatible con todos los tipos de datos
+    - is blank es compatible con todos los tipos de datos
+- El tipo de datos predeterminado de una columna es cualquiera
+- **column_type** hace referencia al tipo de datos de la columna (numérico, texto, fecha y hora, etc.)
+- **column_editable** puede ser igual a Verdadero o Falso (novedad en Dash 1.12.0)
+- **state** puede ser igual a 'active' o 'selected' (novedad en Dash 1.12.0). Úselo para cambiar los colores de fondo y borde rosados ​​predeterminados para las celdas seleccionadas y activas.
+- row_index es absoluto: si filtra u ordena su tabla, la quinta fila permanecerá resaltada. Intente ordenar las columnas y observe cómo "San Francisco" permanece resaltado, pero "Londres" no.
+- column_id, row_index y header_index pueden ser iguales a un escalar (como se indica arriba) o a una lista de valores. Por ejemplo, 'column_id': ['Region', 'Pressure'] es válido (novedad en Dash 1.12.0). El filtrado de DataTable y el formato condicional funcionan más rápido cuando se especifica una lista de valores en lugar de una lista de bloques if separados.
+- **id** es una columna oculta especial que se puede utilizar como alternativa a row_index para resaltar datos por índice. Dado que cada fila tiene un id único, el formato condicional asociado con este id permanecerá asociado con esos datos después de ordenarlos y filtrarlos.
+- **RebeccaPurple**, **hotpink**, **DodgerBlue**... Estos son colores CSS con nombre. Recomendamos evitar los nombres de colores comunes como rojo, azul, verde, ya que parecen muy anticuados. Para ver otras sugerencias de colores, consulte http://clrs.cc/.
+- Dado que estamos utilizando .format, escapamos { con \{{ y } con \}}.
+- Para resaltar una fila, omita column_id. Para resaltar una celda en particular, incluya column_id.
+- **style_cell_conditional** (todas las celdas, incluidos los encabezados), style_header_conditional (celdas de encabezado), style_filter_conditional (filtrar cuadros de entrada) son palabras clave alternativas que se pueden usar para filtrar otras partes de la tabla.
+- **Limitación**: si la tabla es editable, el valor máximo podría cambiar si el usuario edita la tabla. Dado que este ejemplo codifica de forma rígida el valor máximo en la expresión de filtro, el valor resaltado ya no se resaltaría. Como solución alternativa, puede actualizar style_data_conditional a través de una devolución de llamada siempre que cambie derived_virtual_data. Esta limitación se aplica a cualquier formato condicional con números codificados de forma rígida calculados a partir de una expresión en Python (¡incluidos muchos de los ejemplos a continuación!). Consulte plotly/dash-table#755 para obtener actualizaciones.
+
+## Alternative Highlighting Styles
