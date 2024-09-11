@@ -33,3 +33,11 @@ Notas:
 - **Limitación**: si la tabla es editable, el valor máximo podría cambiar si el usuario edita la tabla. Dado que este ejemplo codifica de forma rígida el valor máximo en la expresión de filtro, el valor resaltado ya no se resaltaría. Como solución alternativa, puede actualizar style_data_conditional a través de una devolución de llamada siempre que cambie derived_virtual_data. Esta limitación se aplica a cualquier formato condicional con números codificados de forma rígida calculados a partir de una expresión en Python (¡incluidos muchos de los ejemplos a continuación!). Consulte plotly/dash-table#755 para obtener actualizaciones.
 
 ## Alternative Highlighting Styles
+
+En lugar de resaltar la celda de fondo, puede cambiar el color del texto, ponerlo en negrita, agregar subrayados o darle estilo usando cualquier otra propiedad CSS.
+
+```bash
+2.alternative_highlighting_styles.py
+```
+
+## Special Characters like Emojis, Stars, Checkmarks, Circles
