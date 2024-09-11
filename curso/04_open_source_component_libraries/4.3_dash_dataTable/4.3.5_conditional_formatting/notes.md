@@ -41,3 +41,13 @@ En lugar de resaltar la celda de fondo, puede cambiar el color del texto, ponerl
 ```
 
 ## Special Characters like Emojis, Stars, Checkmarks, Circles
+
+Puede copiar y pegar caracteres Unicode de emoji directamente en su código. Recomendamos copiar valores de emojipedia, p. ej., https://emojipedia.org/star/.
+
+Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no estén disponibles en los conjuntos de caracteres de las máquinas de su audiencia. La apariencia de estos íconos difiere en la mayoría de los sistemas operativos.
+
+```bash
+3.special_characters_like_emojis,_stars,_checkmarks,_circles.py
+```
+
+## Filtering and Conditional Formatting Recipes
