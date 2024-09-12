@@ -66,8 +66,10 @@ Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no
 
 ### Highlighting the Top Three or Bottom Three Values in a Column
 
+```bash
+6.highlighting_the_top.py
+```
 
-
-
+### Highlighting the Max Value in Every Row
 
 
