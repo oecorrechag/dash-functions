@@ -51,3 +51,12 @@ Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no
 ```
 
 ## Filtering and Conditional Formatting Recipes
+
+### Highlighting the Max Value in a Column
+
+```bash
+4.highlighting_the_max_value_in_a_column.py
+```
+
+### Highlighting a Row with the Min Value
+
