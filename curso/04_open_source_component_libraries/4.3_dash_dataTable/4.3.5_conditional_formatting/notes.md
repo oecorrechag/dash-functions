@@ -72,4 +72,8 @@ Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no
 
 ### Highlighting the Max Value in Every Row
 
+```bash
+7.highlighting_the_max_value.py
+```
 
+### Highlighting the Top Two Values in a Row
