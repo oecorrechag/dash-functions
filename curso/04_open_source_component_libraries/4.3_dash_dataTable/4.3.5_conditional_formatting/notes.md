@@ -60,3 +60,14 @@ Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no
 
 ### Highlighting a Row with the Min Value
 
+```bash
+5.highlighting_a_row_with_the_min_value.py
+```
+
+### Highlighting the Top Three or Bottom Three Values in a Column
+
+
+
+
+
+
