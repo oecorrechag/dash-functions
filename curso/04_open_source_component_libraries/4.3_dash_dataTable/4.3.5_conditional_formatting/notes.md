@@ -84,4 +84,8 @@ Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no
 
 ## Highlighting the Maximum Value in the Table
 
+```bash
+9.maximum_value_in_the_table.py
+```
 
+## Highlighting a Range of Values
