@@ -111,3 +111,19 @@ Vamos a descomponer \{{\{col}}}. Queremos que la expresión final se parezca a a
 ```
 
 ## Highlighting Values above Average and Below Average
+
+Aquí, el resaltado se realiza por columna.
+
+```bash
+14.values_above_average_and_below_average.py
+```
+
+Aquí el resaltado se realiza por tabla.
+
+```bash
+15.values_above_average_and_below_average.py
+```
+
+## Highlighting None, NaN, or Empty String Values
+
+
