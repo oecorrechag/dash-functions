@@ -101,3 +101,13 @@ Todos los años se lanzan nuevos caracteres Unicode de emoji y es posible que no
 Vamos a descomponer \{{\{col}}}. Queremos que la expresión final se parezca a algo como {2017} > 5 & {2017} < 10 donde 2017 es el nombre de la columna. Como estamos usando .format(), necesitamos escapar los corchetes, por lo que {2017} sería {{2017}}. Luego, necesitamos reemplazar 2017 con {col} para buscar y reemplazar, por lo que se convierte en \{{\{col}}}.format(col=col)
 
 ## Highlighting Top 10% or Bottom 10% of Values by Column
+
+```bash
+12.values_by_column.py
+```
+
+```bash
+13.values_by_column.py
+```
+
+## Highlighting Values above Average and Below Average
