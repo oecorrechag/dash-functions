@@ -137,3 +137,22 @@ Tres consultas de filtro ayudan con valores vacíos o en blanco:
 ```
 
 ## Displaying Special Values for NaN or None Values
+
+```bash
+17.special_values_for_nan_or_none_values.py
+```
+
+**Limitaciones:**
+
+- Format(nully=) aún no coincide con cadenas vacías, solo con valores None. Consulte plotly/- dash-table#763 para obtener actualizaciones.
+- 'type': 'numeric' debe configurarse, consulte plotly/dash-table#762 para obtener actualizaciones.
+
+Un método alternativo sería completar, por ejemplo, "N/A" en los datos antes de renderizar:
+
+```bash
+18.special_values_for_nan_or_none_values.py
+```
+
+**Limitación**: si su tabla es editable, si un usuario elimina el contenido de una celda, ya no se mostrará "N/D". Esto es diferente del ejemplo con Formato, donde DataTable mostrará automáticamente N/D para todas las celdas vacías, incluso después de la edición.
+
+## Highlighting Text that Contains a Value
