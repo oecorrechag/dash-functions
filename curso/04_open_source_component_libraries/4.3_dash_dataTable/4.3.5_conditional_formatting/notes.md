@@ -126,4 +126,14 @@ Aquí el resaltado se realiza por tabla.
 
 ## Highlighting None, NaN, or Empty String Values
 
+Tres consultas de filtro ayudan con valores vacíos o en blanco:
 
+{my_column} es nulo y coincidirá con valores Ninguno
+{my_column} es blanco y coincidirá con valores Ninguno y cadenas vacías
+{my_column} = "" coincidirá con cadenas vacías
+
+```bash
+16.highlighting_none,_nan,_or_empty_string_values.py
+```
+
+## Displaying Special Values for NaN or None Values
