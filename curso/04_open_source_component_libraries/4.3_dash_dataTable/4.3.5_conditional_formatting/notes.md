@@ -162,3 +162,11 @@ Un método alternativo sería completar, por ejemplo, "N/A" en los datos antes d
 ```
 
 ## Highlighting Text that Equals a Value
+
+```bash
+20.highlighting_text_that_equals_a_value.py
+```
+
+## Highlighting Cells by Value with a Colorscale Like a Heatmap
+
+
