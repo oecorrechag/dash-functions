@@ -156,3 +156,9 @@ Un método alternativo sería completar, por ejemplo, "N/A" en los datos antes d
 **Limitación**: si su tabla es editable, si un usuario elimina el contenido de una celda, ya no se mostrará "N/D". Esto es diferente del ejemplo con Formato, donde DataTable mostrará automáticamente N/D para todas las celdas vacías, incluso después de la edición.
 
 ## Highlighting Text that Contains a Value
+
+```bash
+19.highlighting_text_that_contains_a_value.py
+```
+
+## Highlighting Text that Equals a Value
