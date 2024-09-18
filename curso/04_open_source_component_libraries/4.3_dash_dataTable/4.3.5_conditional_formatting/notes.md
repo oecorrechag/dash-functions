@@ -176,3 +176,10 @@ Esta receta sombrea celdas con style_data_conditional y crea una leyenda con com
 ```
 
 ## Highlighting with a Colorscale on a Single Column
+
+```bash
+22.colorscale_on_a_single_column.py
+```
+
+## Displaying Data Bars
+
