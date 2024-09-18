@@ -169,4 +169,10 @@ Un método alternativo sería completar, por ejemplo, "N/A" en los datos antes d
 
 ## Highlighting Cells by Value with a Colorscale Like a Heatmap
 
+Esta receta sombrea celdas con style_data_conditional y crea una leyenda con componentes HTML. Necesitará instalar pip **colorlover** para obtener las escalas de colores.
 
+```bash
+21.colorscale_like_a_heatmap.py
+```
+
+## Highlighting with a Colorscale on a Single Column
