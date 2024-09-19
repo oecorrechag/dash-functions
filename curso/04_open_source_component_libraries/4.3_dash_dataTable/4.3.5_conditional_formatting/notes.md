@@ -191,4 +191,10 @@ Estas recetas muestran un uso creativo de los colores de fondo con degradados li
 
 ## Data Bars without Text
 
+Muestra las barras de datos sin texto creando una nueva columna y haciendo que el texto sea transparente.
 
+```bash
+24.data_bars_without_text.py
+```
+
+## Diverging Data Bars
