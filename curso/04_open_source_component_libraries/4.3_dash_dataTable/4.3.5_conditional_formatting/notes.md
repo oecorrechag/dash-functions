@@ -183,3 +183,12 @@ Esta receta sombrea celdas con style_data_conditional y crea una leyenda con com
 
 ## Displaying Data Bars
 
+Estas recetas muestran un uso creativo de los colores de fondo con degradados lineales para mostrar gráficos de barras horizontales dentro de la tabla. ¡Los resultados pueden variar! Siéntete libre de modificar estas recetas para tu propio uso.
+
+```bash
+23.displaying_data_bars.py
+```
+
+## Data Bars without Text
+
+
