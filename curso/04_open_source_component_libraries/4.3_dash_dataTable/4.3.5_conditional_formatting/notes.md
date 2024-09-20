@@ -207,4 +207,6 @@ La función **data_bars_diverging** divide los datos en dos cuadrantes por el pu
 
 ## Highlighting Dates
 
-
+```bash
+26.highlighting_dates.py
+```
