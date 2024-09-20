@@ -198,3 +198,13 @@ Muestra las barras de datos sin texto creando una nueva columna y haciendo que e
 ```
 
 ## Diverging Data Bars
+
+La función **data_bars_diverging** divide los datos en dos cuadrantes por el punto medio. Las representaciones alternativas de las barras de datos pueden dividir los datos por números positivos y negativos o por los valores promedio. ¡Tus resultados pueden variar! Siéntete libre de modificar la función **data_bars_diverging** según tus propias necesidades de visualización. 
+
+```bash
+25.diverging_data_bars.py
+```
+
+## Highlighting Dates
+
+
