@@ -20,7 +20,9 @@ La mayoría del formato y la localización de las columnas se pueden realizar a 
 
 La agrupación se define con el formato de propiedades anidadas group y groups. group toma los valores True o Group.yes para alternar la agrupación de dígitos. groups toma una lista de números que se utilizan para definir el patrón de agrupación de dígitos. Si el número tiene más dígitos que los definidos en groups, recorre la lista nuevamente hasta que se queda sin números para agrupar.
 
+```bash
+2.group.py
+```
 
-
-
+### Align and Fill
 
