@@ -32,6 +32,12 @@ La alineación y el relleno se definen con las propiedades anidadas de formato a
 3.align_and_fill.py
 ```
 
+### Padding and Padding Width
 
+El relleno y el ancho de relleno se definen con las propiedades anidadas de formato padding y padding_width y se comportan de manera similar a fill y padding_width, pero no permiten la alineación.
 
+```bash
+4.padding_and_padding_width.py
+```
 
+### Precision and Scheme
