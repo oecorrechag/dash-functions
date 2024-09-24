@@ -26,3 +26,12 @@ La agrupación se define con el formato de propiedades anidadas group y groups. 
 
 ### Align and Fill
 
+La alineación y el relleno se definen con las propiedades anidadas de formato align, fill y padding_width. El asistente align toma los valores left, right y center. fill es un solo carácter que se utilizará para el relleno. padding_width es la longitud mínima de la cadena completa. Si el número formateado requiere más espacio del que permite padding_width, lo hará.
+
+```bash
+3.align_and_fill.py
+```
+
+
+
+
