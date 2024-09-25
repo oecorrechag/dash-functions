@@ -55,3 +55,9 @@ Cuándo mostrar un signo y qué tipo de signo mostrar se define con el formato p
 ```
 
 ### Symbol
+
+La visualización de símbolos se define con el formato prop anidado symbol y los símbolos de prefijo/sufijo se definen con el formato prop anidado symbol. El ayudante Symbol toma los valores sí y no. El formato prop anidado symbol es una lista de cadenas de longitud 2 con el formato [prefijo, sufijo]. Las cadenas en symbol pueden tener cualquier longitud.
+
+```bash
+7.symbol.py
+```
