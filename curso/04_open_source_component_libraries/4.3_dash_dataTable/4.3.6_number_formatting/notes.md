@@ -48,5 +48,10 @@ El relleno y el ancho de relleno se definen con las propiedades anidadas de form
 
 ### Sign 
 
+Cuándo mostrar un signo y qué tipo de signo mostrar se define con el formato prop. anidado sign. El asistente Sign toma valores negativos (mostrar signo cuando es negativo), positivos (mostrar siempre signo), paréntesis (cuando es negativo)
 
+```bash
+6.sign.py
+```
 
+### Symbol
