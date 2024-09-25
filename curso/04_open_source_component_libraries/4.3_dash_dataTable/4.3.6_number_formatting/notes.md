@@ -41,3 +41,12 @@ El relleno y el ancho de relleno se definen con las propiedades anidadas de form
 ```
 
 ### Precision and Scheme
+
+```bash
+5.precision_and_scheme.py
+```
+
+### Sign 
+
+
+
