@@ -61,3 +61,13 @@ La visualización de símbolos se define con el formato prop anidado symbol y lo
 ```bash
 7.symbol.py
 ```
+
+### Localization
+
+```bash
+8.localization.py
+```
+
+
+
+
